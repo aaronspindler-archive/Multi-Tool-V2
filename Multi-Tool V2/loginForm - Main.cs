@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 //@author xNovax
@@ -55,13 +48,22 @@ namespace Multi_Tool_V2
         //Checks the variable firstLoad to see if it is the first time the user has opened the program.
         public void firstTime()
         {
-            
+            if (firstLoad == true)
+            {
+                
+            }
         }
 
         //Open and read the login file
         public void readFile()
         {
-            
+            StreamReader reader = new StreamReader(Multi_Tool_V2.Properties.Resources.userInfo);
+            for (int i = 0; i < numberOfUsers; i++)
+            {
+                readUsername = reader.ReadLine();
+                readPassword = reader.ReadLine();
+            }
+            reader.Close();
         }
 
         //Checks the inputted information against the information in the text file
@@ -71,6 +73,13 @@ namespace Multi_Tool_V2
         }
 
         //End of author created methods
+
+        //Runs this code when the form loads
+        private void loginForm_Load(object sender, EventArgs e)
+        {
+            firstTime();
+            checkForText();
+        }
 
         //Checks to see if the usernameTextBox's text has changed.
         private void usernameTextBox_TextChanged(object sender, EventArgs e)
@@ -84,15 +93,6 @@ namespace Multi_Tool_V2
         {
             checkForText();
             inputPassword = passwordTextBox.Text;
-        }
-
-        //Runs this code when the form loads
-        private void loginForm_Load(object sender, EventArgs e)
-        {
-            checkForText();
-            //Resets all settings to defaults.
-            //Delete the line below before release.
-            Properties.Settings.Default.Reset();
         }
 
         //Runs this code when the user clicks on the login button
