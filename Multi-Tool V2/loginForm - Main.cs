@@ -21,12 +21,19 @@ namespace Multi_Tool_V2
         }
 
         //Start of Variable Declaration
+
+        //Variables to temporarly store what the file reader is reading
         String readUsername;
         String readPassword;
+        //Variable that will hold what the user inputs into the usernameField
         String inputUsername;
+        //Variable that will hold what the user inputs into the passwordField
         String inputPassword;
+        //How many users are there in the text file?
         int numberOfUsers = Multi_Tool_V2.Properties.Settings.Default.numberOfUsers;
+        //Is it the first time the user has loaded the program?
         Boolean firstLoad = Multi_Tool_V2.Properties.Settings.Default.firstLoad;
+
         //End of Variable Declaration
 
         //Start of author created methods
@@ -45,18 +52,22 @@ namespace Multi_Tool_V2
             }
         }
 
-        //Opens up the userfile and reads the file. If a users username and password inputed match a set from the file they will be allowed in.
+        //Checks the variable firstLoad to see if it is the first time the user has opened the program.
+        public void firstTime()
+        {
+            
+        }
+
+        //Open and read the login file
+        public void readFile()
+        {
+            
+        }
+
+        //Checks the inputted information against the information in the text file
         public void checkInformation()
         {
-            StreamReader reader = new StreamReader(Multi_Tool_V2.Properties.Resources.userInfo);
-            for (int i = 0; i < numberOfUsers; i++)
-            {
-                readUsername = reader.ReadLine();
-                readPassword = reader.ReadLine();
-                Console.WriteLine(readUsername);
-                Console.WriteLine(readPassword);
-            }
-            reader.Close();
+            
         }
 
         //End of author created methods

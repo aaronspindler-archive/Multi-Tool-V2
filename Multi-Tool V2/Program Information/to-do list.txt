@@ -1,1 +1,5 @@
-﻿
+﻿=========================================================
+[To-Do List]
+- Setup the login form
+- Setup the user creator
+- Create a main form for after the user logs in
