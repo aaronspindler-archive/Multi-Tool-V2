@@ -49,8 +49,28 @@ namespace Multi_Tool_V2
         //Checks the variable firstLoad to see if it is the first time the user has opened the program.
         public void firstTime()
         {
+            var message = ("Since this is your first time loading the program you need to select a file");
+            var title = ("Select a File");
+
             if (firstLoad == true)
             {
+                if (MessageBox.Show(message,title, MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+                {
+                    if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    {
+                        readFile();
+                    }
+                    else
+                    {
+                        var messaage = ("You did not select a file and press ok. Please make sure you do so");
+                        MessageBox.Show(message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    var messaage = ("You did not select a file and press ok. Please make sure you do so");
+                    MessageBox.Show(message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 
             }
         }
@@ -60,13 +80,13 @@ namespace Multi_Tool_V2
         {
             //Create a file reader that is targeting the userInfo.txt file in the resources.
             StreamReader reader = new StreamReader(openFileDialog.FileName);
-            //Runs the reader for the number of users there are in the file.
-            for (int i = 0; i < numberOfUsers; i++)
-            {
+            //Reads the file until you reach the end of the file or you succesfully get a combination
+            do{
                 readUsername = reader.ReadLine();
                 readPassword = reader.ReadLine();
                 checkInformation();
-            }
+              } while((readUsername != null)||(readPassword != null)||(loginSuccesful != true));
+
             reader.Close();
         }
 
@@ -110,7 +130,6 @@ namespace Multi_Tool_V2
         private void loginButton_Click(object sender, EventArgs e)
         {
             checkForText();
-            checkInformation();
         }
     }
 }
