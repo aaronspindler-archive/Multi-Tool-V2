@@ -26,6 +26,7 @@ namespace Multi_Tool_V2
         int numberOfUsers = Multi_Tool_V2.Properties.Settings.Default.numberOfUsers;
         //Is it the first time the user has loaded the program?
         Boolean firstLoad = Multi_Tool_V2.Properties.Settings.Default.firstLoad;
+        Boolean loginSuccesful;
 
         //End of Variable Declaration
 
@@ -57,11 +58,14 @@ namespace Multi_Tool_V2
         //Open and read the login file
         public void readFile()
         {
-            StreamReader reader = new StreamReader(Multi_Tool_V2.Properties.Resources.userInfo);
+            //Create a file reader that is targeting the userInfo.txt file in the resources.
+            StreamReader reader = new StreamReader(openFileDialog.FileName);
+            //Runs the reader for the number of users there are in the file.
             for (int i = 0; i < numberOfUsers; i++)
             {
                 readUsername = reader.ReadLine();
                 readPassword = reader.ReadLine();
+                checkInformation();
             }
             reader.Close();
         }
@@ -69,7 +73,14 @@ namespace Multi_Tool_V2
         //Checks the inputted information against the information in the text file
         public void checkInformation()
         {
-            
+            if ((readUsername == inputUsername) && (readPassword == inputPassword))
+            {
+                loginSuccesful = true;
+            }
+            else
+            {
+                loginSuccesful = false;
+            }
         }
 
         //End of author created methods

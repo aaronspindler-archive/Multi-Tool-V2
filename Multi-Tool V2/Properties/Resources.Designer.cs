@@ -61,16 +61,6 @@ namespace Multi_Tool_V2.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to xNovax
-        ///password.
-        /// </summary>
-        internal static string userInfo {
-            get {
-                return ResourceManager.GetString("userInfo", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon wrench_clip_art_icon {
