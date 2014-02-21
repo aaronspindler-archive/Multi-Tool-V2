@@ -16,17 +16,18 @@ namespace Multi_Tool_V2
         //Start of Variable Declaration
 
         //Variables to temporarly store what the file reader is reading
-        String readUsername;
-        String readPassword;
+        String readUsername = ("1");
+        String readPassword = ("1");
         //Variable that will hold what the user inputs into the usernameField
-        String inputUsername;
+        String inputUsername = ("");
         //Variable that will hold what the user inputs into the passwordField
-        String inputPassword;
+        String inputPassword = ("");
         //How many users are there in the text file?
         int numberOfUsers = Multi_Tool_V2.Properties.Settings.Default.numberOfUsers;
         //Is it the first time the user has loaded the program?
         Boolean firstLoad = Multi_Tool_V2.Properties.Settings.Default.firstLoad;
         Boolean loginSuccesful;
+        String fileName;
 
         //End of Variable Declaration
 
@@ -59,6 +60,9 @@ namespace Multi_Tool_V2
                     if (openFileDialog.ShowDialog() == DialogResult.OK)
                     {
                         readFile();
+                        Multi_Tool_V2.Properties.Settings.Default.userFileName = openFileDialog.FileName;
+                        Multi_Tool_V2.Properties.Settings.Default.Save();
+                        fileName = openFileDialog.FileName;
                     }
                     else
                     {
@@ -73,13 +77,17 @@ namespace Multi_Tool_V2
                 }
                 
             }
+            else
+            {
+                fileName = Multi_Tool_V2.Properties.Settings.Default.userFileName;
+            }
         }
 
         //Open and read the login file
         public void readFile()
         {
             //Create a file reader that is targeting the userInfo.txt file in the resources.
-            StreamReader reader = new StreamReader(openFileDialog.FileName);
+            StreamReader reader = new StreamReader(fileName);
             //Reads the file until you reach the end of the file or you succesfully get a combination
             do{
                 readUsername = reader.ReadLine();
