@@ -1,7 +1,8 @@
 ﻿=========================================================
 [To-Do List]
-- Setup the login form
-- Setup the user creator
-- Create a main form for after the user logs in
+- Setup the login form [DONE]
+- Setup the user creator [DELAYED]
+- Create a main form for after the user logs in [DONE]
+- Setup the programHomeForm
 - Write a random password generator
 - Write a calculator

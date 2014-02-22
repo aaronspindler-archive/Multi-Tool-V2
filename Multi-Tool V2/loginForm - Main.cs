@@ -9,7 +9,6 @@ namespace Multi_Tool_V2
     {
         public loginForm()
         {
-
             InitializeComponent();
         }
 
@@ -47,7 +46,6 @@ namespace Multi_Tool_V2
             {
                 loginSuccessful = true;
                 recordUsername();
-                Console.WriteLine("Login Successful");
             }
             else
             {
