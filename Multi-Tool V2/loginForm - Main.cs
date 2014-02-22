@@ -13,7 +13,7 @@ namespace Multi_Tool_V2
             InitializeComponent();
         }
 
-        //Start of Variable Declaration
+        //Start of Global Variable Declaration
 
         //Variables to temporarly store what the file reader is reading
         String readUsername = ("1");
@@ -22,14 +22,14 @@ namespace Multi_Tool_V2
         String inputUsername = ("");
         //Variable that will hold what the user inputs into the passwordField
         String inputPassword = ("");
-        //How many users are there in the text file?
-        int numberOfUsers = Multi_Tool_V2.Properties.Settings.Default.numberOfUsers;
         //Is it the first time the user has loaded the program?
         Boolean firstLoad = Multi_Tool_V2.Properties.Settings.Default.firstLoad;
         Boolean loginSuccesful;
         String fileName;
+        String errorCode = ("");
+        Boolean errorOccuredAlready = false;
 
-        //End of Variable Declaration
+        //End of Global Variable Declaration
 
         //Start of author created methods
 
@@ -50,32 +50,31 @@ namespace Multi_Tool_V2
         //Checks the variable firstLoad to see if it is the first time the user has opened the program.
         public void firstTime()
         {
-            var message = ("Since this is your first time loading the program you need to select a file");
-            var title = ("Select a File");
-
             if (firstLoad == true)
             {
-                if (MessageBox.Show(message,title, MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+                //Creating local variables to store the messageBox information
+                var messageBoxContents = ("Please load a user file into the program");
+                var messageBoxTitle = ("Load a File");
+
+                if (MessageBox.Show(messageBoxContents, messageBoxTitle, MessageBoxButtons.OK,MessageBoxIcon.Information) == DialogResult.OK)
                 {
                     if (openFileDialog.ShowDialog() == DialogResult.OK)
                     {
-                        readFile();
-                        Multi_Tool_V2.Properties.Settings.Default.userFileName = openFileDialog.FileName;
-                        Multi_Tool_V2.Properties.Settings.Default.Save();
+                        firstLoad = false;
                         fileName = openFileDialog.FileName;
+                        Multi_Tool_V2.Properties.Settings.Default.userFileName = fileName;
                     }
                     else
                     {
-                        var messaage = ("You did not select a file and press ok. Please make sure you do so");
-                        MessageBox.Show(message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        errorOccured();
                     }
                 }
                 else
                 {
-                    var messaage = ("You did not select a file and press ok. Please make sure you do so");
-                    MessageBox.Show(message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    errorOccured();
                 }
-                
+                Multi_Tool_V2.Properties.Settings.Default.firstLoad = firstLoad;
+                Multi_Tool_V2.Properties.Settings.Default.Save();
             }
             else
             {
@@ -107,8 +106,25 @@ namespace Multi_Tool_V2
             }
             else
             {
-                loginSuccesful = false;
+                if (errorOccuredAlready == false)
+                {
+                    loginSuccesful = false;
+                    errorCode = ("Username or Password Incorrect");
+                    errorOccured();
+                    errorOccuredAlready = true;
+                }
+                else
+                {
+                    
+                }
             }
+        }
+
+        public void errorOccured()
+        {
+            var messageBoxContents = ("An error has occured: "+errorCode);
+            var messageBoxTitle = ("Error");
+            MessageBox.Show(messageBoxContents, messageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         //End of author created methods
@@ -138,6 +154,8 @@ namespace Multi_Tool_V2
         private void loginButton_Click(object sender, EventArgs e)
         {
             checkForText();
+            firstTime();
+            readFile();
         }
     }
 }
