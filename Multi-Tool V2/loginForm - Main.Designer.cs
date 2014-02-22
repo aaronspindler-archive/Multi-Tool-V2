@@ -57,22 +57,24 @@
             this.loginTableLayout.Controls.Add(this.createUserButton, 2, 3);
             this.loginTableLayout.Dock = System.Windows.Forms.DockStyle.Fill;
             this.loginTableLayout.Location = new System.Drawing.Point(0, 0);
+            this.loginTableLayout.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.loginTableLayout.Name = "loginTableLayout";
             this.loginTableLayout.RowCount = 4;
             this.loginTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.loginTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.loginTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.loginTableLayout.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.loginTableLayout.Size = new System.Drawing.Size(290, 118);
+            this.loginTableLayout.Size = new System.Drawing.Size(580, 227);
             this.loginTableLayout.TabIndex = 0;
             // 
             // usernameTextBox
             // 
             this.loginTableLayout.SetColumnSpan(this.usernameTextBox, 2);
             this.usernameTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usernameTextBox.Location = new System.Drawing.Point(147, 3);
+            this.usernameTextBox.Location = new System.Drawing.Point(296, 6);
+            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.Size = new System.Drawing.Size(140, 20);
+            this.usernameTextBox.Size = new System.Drawing.Size(278, 31);
             this.usernameTextBox.TabIndex = 1;
             this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
             // 
@@ -81,9 +83,10 @@
             this.usernameTitleLabel.AutoSize = true;
             this.loginTableLayout.SetColumnSpan(this.usernameTitleLabel, 2);
             this.usernameTitleLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.usernameTitleLabel.Location = new System.Drawing.Point(3, 0);
+            this.usernameTitleLabel.Location = new System.Drawing.Point(6, 0);
+            this.usernameTitleLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.usernameTitleLabel.Name = "usernameTitleLabel";
-            this.usernameTitleLabel.Size = new System.Drawing.Size(138, 29);
+            this.usernameTitleLabel.Size = new System.Drawing.Size(278, 56);
             this.usernameTitleLabel.TabIndex = 0;
             this.usernameTitleLabel.Text = "Enter a username";
             this.usernameTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -93,9 +96,10 @@
             this.passwordTitleLabel.AutoSize = true;
             this.loginTableLayout.SetColumnSpan(this.passwordTitleLabel, 2);
             this.passwordTitleLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.passwordTitleLabel.Location = new System.Drawing.Point(3, 29);
+            this.passwordTitleLabel.Location = new System.Drawing.Point(6, 56);
+            this.passwordTitleLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.passwordTitleLabel.Name = "passwordTitleLabel";
-            this.passwordTitleLabel.Size = new System.Drawing.Size(138, 29);
+            this.passwordTitleLabel.Size = new System.Drawing.Size(278, 56);
             this.passwordTitleLabel.TabIndex = 1;
             this.passwordTitleLabel.Text = "Enter a password";
             this.passwordTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -104,10 +108,11 @@
             // 
             this.loginTableLayout.SetColumnSpan(this.passwordTextBox, 2);
             this.passwordTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.passwordTextBox.Location = new System.Drawing.Point(147, 32);
+            this.passwordTextBox.Location = new System.Drawing.Point(296, 62);
+            this.passwordTextBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '*';
-            this.passwordTextBox.Size = new System.Drawing.Size(140, 20);
+            this.passwordTextBox.Size = new System.Drawing.Size(278, 31);
             this.passwordTextBox.TabIndex = 2;
             this.passwordTextBox.UseSystemPasswordChar = true;
             this.passwordTextBox.TextChanged += new System.EventHandler(this.passwordTextBox_TextChanged);
@@ -116,9 +121,10 @@
             // 
             this.loginTableLayout.SetColumnSpan(this.loginButton, 4);
             this.loginButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.loginButton.Location = new System.Drawing.Point(3, 61);
+            this.loginButton.Location = new System.Drawing.Point(6, 118);
+            this.loginButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.loginButton.Name = "loginButton";
-            this.loginButton.Size = new System.Drawing.Size(284, 23);
+            this.loginButton.Size = new System.Drawing.Size(568, 44);
             this.loginButton.TabIndex = 3;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = true;
@@ -129,9 +135,10 @@
             this.createUserTitleLabel.AutoSize = true;
             this.loginTableLayout.SetColumnSpan(this.createUserTitleLabel, 2);
             this.createUserTitleLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.createUserTitleLabel.Location = new System.Drawing.Point(3, 87);
+            this.createUserTitleLabel.Location = new System.Drawing.Point(6, 168);
+            this.createUserTitleLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.createUserTitleLabel.Name = "createUserTitleLabel";
-            this.createUserTitleLabel.Size = new System.Drawing.Size(138, 31);
+            this.createUserTitleLabel.Size = new System.Drawing.Size(278, 59);
             this.createUserTitleLabel.TabIndex = 4;
             this.createUserTitleLabel.Text = "Need to create a user?";
             this.createUserTitleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -140,9 +147,10 @@
             // 
             this.loginTableLayout.SetColumnSpan(this.createUserButton, 2);
             this.createUserButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.createUserButton.Location = new System.Drawing.Point(147, 90);
+            this.createUserButton.Location = new System.Drawing.Point(296, 174);
+            this.createUserButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.createUserButton.Name = "createUserButton";
-            this.createUserButton.Size = new System.Drawing.Size(140, 25);
+            this.createUserButton.Size = new System.Drawing.Size(278, 47);
             this.createUserButton.TabIndex = 5;
             this.createUserButton.Text = "Create a User";
             this.createUserButton.UseVisualStyleBackColor = true;
@@ -154,12 +162,13 @@
             // 
             // loginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(290, 118);
+            this.ClientSize = new System.Drawing.Size(580, 227);
             this.Controls.Add(this.loginTableLayout);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "loginForm";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.loginForm_Load);

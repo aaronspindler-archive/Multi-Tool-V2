@@ -30,6 +30,7 @@ namespace Multi_Tool_V2
                 var messageContents = ("Welcome to xNovax's Multi-Tool V2");
                 var messageTitle = ("Welcome");
                 MessageBox.Show(messageContents,messageTitle,MessageBoxButtons.OK,MessageBoxIcon.Information);
+                firstLoad = false;
             }
             else
             {
@@ -37,6 +38,8 @@ namespace Multi_Tool_V2
                 var messageTitle = ("Welcome Back");
                 MessageBox.Show(messageContents,messageTitle,MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
+            Multi_Tool_V2.Properties.Settings.Default.firstLoad = firstLoad;
+            Multi_Tool_V2.Properties.Settings.Default.Save();
         }
 
         //Checks the information typed into the textboxes against the usernames and passwords below.
@@ -46,6 +49,7 @@ namespace Multi_Tool_V2
             {
                 loginSuccessful = true;
                 recordUsername();
+                launchHome();
             }
             else
             {
@@ -79,6 +83,14 @@ namespace Multi_Tool_V2
         public void recordUsername()
         {
             Multi_Tool_V2.Properties.Settings.Default.userName = username;
+            Multi_Tool_V2.Properties.Settings.Default.Save();
+        }
+
+        public void launchHome()
+        {
+            this.Hide();
+            var programHome = new programHome();
+            programHome.Show();
         }
 
         //End of author created methods
