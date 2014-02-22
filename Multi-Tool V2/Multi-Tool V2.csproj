@@ -89,15 +89,18 @@
       <DependentUpon>loginForm - Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-    <Compile Include="programHome.cs">
+    <Compile Include="program - Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="programHome.Designer.cs">
-      <DependentUpon>programHome.cs</DependentUpon>
+    <Compile Include="program - Home.Designer.cs">
+      <DependentUpon>program - Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="loginForm - Main.resx">
       <DependentUpon>loginForm - Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="program - Home.resx">
+      <DependentUpon>program - Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
