@@ -14,20 +14,10 @@ namespace Multi_Tool_V2
         }
 
         //Start of Global Variable Declaration
-
+        string errorCode = ("");
+        string username = ("");
+        string password = ("");
         //Variables to temporarly store what the file reader is reading
-        String readUsername = ("1");
-        String readPassword = ("1");
-        //Variable that will hold what the user inputs into the usernameField
-        String inputUsername = ("");
-        //Variable that will hold what the user inputs into the passwordField
-        String inputPassword = ("");
-        //Is it the first time the user has loaded the program?
-        Boolean firstLoad = Multi_Tool_V2.Properties.Settings.Default.firstLoad;
-        Boolean loginSuccesful;
-        String fileName;
-        String errorCode = ("");
-        Boolean errorOccuredAlready = false;
 
         //End of Global Variable Declaration
 
@@ -50,74 +40,7 @@ namespace Multi_Tool_V2
         //Checks the variable firstLoad to see if it is the first time the user has opened the program.
         public void firstTime()
         {
-            if (firstLoad == true)
-            {
-                //Creating local variables to store the messageBox information
-                var messageBoxContents = ("Please load a user file into the program");
-                var messageBoxTitle = ("Load a File");
-
-                if (MessageBox.Show(messageBoxContents, messageBoxTitle, MessageBoxButtons.OK,MessageBoxIcon.Information) == DialogResult.OK)
-                {
-                    if (openFileDialog.ShowDialog() == DialogResult.OK)
-                    {
-                        firstLoad = false;
-                        fileName = openFileDialog.FileName;
-                        Multi_Tool_V2.Properties.Settings.Default.userFileName = fileName;
-                    }
-                    else
-                    {
-                        errorOccured();
-                    }
-                }
-                else
-                {
-                    errorOccured();
-                }
-                Multi_Tool_V2.Properties.Settings.Default.firstLoad = firstLoad;
-                Multi_Tool_V2.Properties.Settings.Default.Save();
-            }
-            else
-            {
-                fileName = Multi_Tool_V2.Properties.Settings.Default.userFileName;
-            }
-        }
-
-        //Open and read the login file
-        public void readFile()
-        {
-            //Create a file reader that is targeting the userInfo.txt file in the resources.
-            StreamReader reader = new StreamReader(fileName);
-            //Reads the file until you reach the end of the file or you succesfully get a combination
-            do{
-                readUsername = reader.ReadLine();
-                readPassword = reader.ReadLine();
-                checkInformation();
-              } while((readUsername != null)||(readPassword != null)||(loginSuccesful != true));
-
-            reader.Close();
-        }
-
-        //Checks the inputted information against the information in the text file
-        public void checkInformation()
-        {
-            if ((readUsername == inputUsername) && (readPassword == inputPassword))
-            {
-                loginSuccesful = true;
-            }
-            else
-            {
-                if (errorOccuredAlready == false)
-                {
-                    loginSuccesful = false;
-                    errorCode = ("Username or Password Incorrect");
-                    errorOccured();
-                    errorOccuredAlready = true;
-                }
-                else
-                {
-                    
-                }
-            }
+            
         }
 
         public void errorOccured()
@@ -140,14 +63,14 @@ namespace Multi_Tool_V2
         private void usernameTextBox_TextChanged(object sender, EventArgs e)
         {
             checkForText();
-            inputUsername = usernameTextBox.Text;
+            username = usernameTextBox.Text;
         }
 
         //Checks to see if the passwordTextBox's text has changed.
         private void passwordTextBox_TextChanged(object sender, EventArgs e)
         {
             checkForText();
-            inputPassword = passwordTextBox.Text;
+            password = passwordTextBox.Text;
         }
 
         //Runs this code when the user clicks on the login button
@@ -155,7 +78,6 @@ namespace Multi_Tool_V2
         {
             checkForText();
             firstTime();
-            readFile();
         }
     }
 }
