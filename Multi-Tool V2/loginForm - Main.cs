@@ -9,6 +9,7 @@ namespace Multi_Tool_V2
     {
         public loginForm()
         {
+
             InitializeComponent();
         }
 
