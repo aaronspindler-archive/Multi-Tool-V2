@@ -38,18 +38,6 @@ namespace Multi_Tool_V2.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string userFileName {
-            get {
-                return ((string)(this["userFileName"]));
-            }
-            set {
-                this["userFileName"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string userName {
             get {
                 return ((string)(this["userName"]));
