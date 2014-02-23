@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Multi_Tool_V2
 {
-    public partial class rp___Program : Form
+    public partial class randomPassword_Home : Form
     {
-        public rp___Program()
+        public randomPassword_Home()
         {
             InitializeComponent();
         }

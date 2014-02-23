@@ -1,6 +1,6 @@
 ﻿namespace Multi_Tool_V2
 {
-    partial class rp___Program
+    partial class randomPassword_Home
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // randomPassword_Home
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "rp___Program";
+            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Name = "randomPassword_Home";
+            this.Text = "Random Password Generator";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

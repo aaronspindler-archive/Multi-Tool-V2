@@ -96,11 +96,11 @@
       <DependentUpon>program - Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="rp - Program.cs">
+    <Compile Include="randomPassword_Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="rp - Program.Designer.cs">
-      <DependentUpon>rp - Program.cs</DependentUpon>
+    <Compile Include="randomPassword_Home.Designer.cs">
+      <DependentUpon>randomPassword_Home.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="loginForm - Main.resx">
       <DependentUpon>loginForm - Main.cs</DependentUpon>
@@ -118,6 +118,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="randomPassword_Home.resx">
+      <DependentUpon>randomPassword_Home.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Multi-Tool V2_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
