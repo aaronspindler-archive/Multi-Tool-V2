@@ -63,6 +63,16 @@ namespace Multi_Tool_V2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
+        internal static System.Drawing.Icon randomPasswordGeneratorIcon {
+            get {
+                object obj = ResourceManager.GetObject("randomPasswordGeneratorIcon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
         internal static System.Drawing.Icon wrench_clip_art_icon {
             get {
                 object obj = ResourceManager.GetObject("wrench_clip_art_icon", resourceCulture);
