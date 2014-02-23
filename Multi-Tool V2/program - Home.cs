@@ -25,7 +25,13 @@ namespace Multi_Tool_V2
 
         //End of Author Defined Methods
 
+        //Making sure the entire program is getting closed when you exit the main form
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        //Doing the same thing as above but for a different event
+        private void programHome_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
