@@ -112,6 +112,7 @@
             this.randomPasswordGeneratorToolStripMenuItem.Name = "randomPasswordGeneratorToolStripMenuItem";
             this.randomPasswordGeneratorToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.randomPasswordGeneratorToolStripMenuItem.Text = "Random Password Generator";
+            this.randomPasswordGeneratorToolStripMenuItem.Click += new System.EventHandler(this.randomPasswordGeneratorToolStripMenuItem_Click);
             // 
             // optionsToolStripMenuItem
             // 

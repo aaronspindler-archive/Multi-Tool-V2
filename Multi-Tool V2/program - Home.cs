@@ -40,5 +40,11 @@ namespace Multi_Tool_V2
         {
             usernameDisplay.Text = ("Logged in as: " + username);
         }
+
+        private void randomPasswordGeneratorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var rp = new randomPassword_Home();
+            rp.Show();
+        }
     }
 }
