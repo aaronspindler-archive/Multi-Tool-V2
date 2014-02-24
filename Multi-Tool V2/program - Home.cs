@@ -1,12 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Multi_Tool_V2.Properties;
 
 namespace Multi_Tool_V2
 {
@@ -14,7 +8,7 @@ namespace Multi_Tool_V2
     {
         //@author xNovax
         //Start of Global Variable Declaration
-        String username = Multi_Tool_V2.Properties.Settings.Default.userName;
+        private readonly String username = Settings.Default.userName;
         //End of Global Variable Declaration
         public programHome()
         {
@@ -30,6 +24,7 @@ namespace Multi_Tool_V2
         {
             Application.Exit();
         }
+
         //Doing the same thing as above but for a different event
         private void programHome_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -49,7 +44,7 @@ namespace Multi_Tool_V2
 
         private void resetSettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Multi_Tool_V2.Properties.Settings.Default.Reset();
+            Settings.Default.Reset();
         }
     }
 }

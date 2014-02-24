@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using Multi_Tool_V2.Properties;
 
 //@author xNovax
 
@@ -7,17 +8,18 @@ namespace Multi_Tool_V2
 {
     public partial class loginForm : Form
     {
+        //Start of Global Variable Declaration
+        private string errorCode = ("");
+        private Boolean firstLoad = Settings.Default.firstLoad;
+        private Boolean loginSuccessful;
+        private string password = ("");
+        private string username = ("");
+
         public loginForm()
         {
             InitializeComponent();
         }
 
-        //Start of Global Variable Declaration
-        string errorCode = ("");
-        string username = ("");
-        string password = ("");
-        Boolean firstLoad = Multi_Tool_V2.Properties.Settings.Default.firstLoad;
-        Boolean loginSuccessful = false;
         //End of Global Variable Declaration
 
         //Start of author created methods
@@ -25,21 +27,21 @@ namespace Multi_Tool_V2
         //Checks the variable firstLoad to see if it is the first time the user has opened the program.
         public void firstTime()
         {
-            if (firstLoad == true)
+            if (firstLoad)
             {
-                var messageContents = ("Welcome to xNovax's Multi-Tool V2");
-                var messageTitle = ("Welcome");
-                MessageBox.Show(messageContents,messageTitle,MessageBoxButtons.OK,MessageBoxIcon.Information);
+                string messageContents = ("Welcome to xNovax's Multi-Tool V2");
+                string messageTitle = ("Welcome");
+                MessageBox.Show(messageContents, messageTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
                 firstLoad = false;
             }
             else
             {
-                var messageContents = ("Welcome back");
-                var messageTitle = ("Welcome Back");
-                MessageBox.Show(messageContents,messageTitle,MessageBoxButtons.OK,MessageBoxIcon.Information);
+                string messageContents = ("Welcome back");
+                string messageTitle = ("Welcome Back");
+                MessageBox.Show(messageContents, messageTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            Multi_Tool_V2.Properties.Settings.Default.firstLoad = firstLoad;
-            Multi_Tool_V2.Properties.Settings.Default.Save();
+            Settings.Default.firstLoad = firstLoad;
+            Settings.Default.Save();
         }
 
         //Checks the information typed into the textboxes against the usernames and passwords below.
@@ -75,20 +77,20 @@ namespace Multi_Tool_V2
         //General error message with a customizable error code.
         public void errorOccured()
         {
-            var messageBoxContents = ("An error has occured: "+errorCode);
-            var messageBoxTitle = ("Error");
+            string messageBoxContents = ("An error has occured: " + errorCode);
+            string messageBoxTitle = ("Error");
             MessageBox.Show(messageBoxContents, messageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         public void recordUsername()
         {
-            Multi_Tool_V2.Properties.Settings.Default.userName = username;
-            Multi_Tool_V2.Properties.Settings.Default.Save();
+            Settings.Default.userName = username;
+            Settings.Default.Save();
         }
 
         public void launchHome()
         {
-            this.Hide();
+            Hide();
             var programHome = new programHome();
             programHome.Show();
         }

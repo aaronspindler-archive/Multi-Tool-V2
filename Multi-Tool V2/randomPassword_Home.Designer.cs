@@ -228,6 +228,10 @@
             0});
             this.lengthOfPasswordsUD.ValueChanged += new System.EventHandler(this.lengthOfPasswordsUD_ValueChanged);
             // 
+            // saveFileDialog
+            // 
+            this.saveFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
+            // 
             // randomPassword_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
