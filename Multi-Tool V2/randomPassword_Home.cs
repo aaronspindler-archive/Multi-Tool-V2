@@ -42,5 +42,11 @@ namespace Multi_Tool_V2
         {
             usernameDisplay.Text = ("Logged in as: " + username);
         }
+
+        private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var rpo = new randomPassword_Options();
+            rpo.Show();
+        }
     }
 }

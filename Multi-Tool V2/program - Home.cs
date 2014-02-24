@@ -46,5 +46,10 @@ namespace Multi_Tool_V2
             var rp = new randomPassword_Home();
             rp.Show();
         }
+
+        private void resetSettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Multi_Tool_V2.Properties.Settings.Default.Reset();
+        }
     }
 }

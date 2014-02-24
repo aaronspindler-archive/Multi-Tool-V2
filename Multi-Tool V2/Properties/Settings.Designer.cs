@@ -58,5 +58,41 @@ namespace Multi_Tool_V2.Properties {
                 this["applicationNeedsToClose"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool normalPass {
+            get {
+                return ((bool)(this["normalPass"]));
+            }
+            set {
+                this["normalPass"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool numberPass {
+            get {
+                return ((bool)(this["numberPass"]));
+            }
+            set {
+                this["numberPass"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool specialCharPass {
+            get {
+                return ((bool)(this["specialCharPass"]));
+            }
+            set {
+                this["specialCharPass"] = value;
+            }
+        }
     }
 }
