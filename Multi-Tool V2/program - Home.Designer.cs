@@ -40,6 +40,9 @@
             this.programOptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usernameDisplay = new System.Windows.Forms.Label();
+            this.programTitle = new System.Windows.Forms.Label();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -57,17 +60,17 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.Controls.Add(this.menuStrip, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.usernameDisplay, 6, 0);
+            this.tableLayoutPanel1.Controls.Add(this.programTitle, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1248, 812);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(624, 422);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // menuStrip
@@ -78,11 +81,11 @@
             this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.programsToolStripMenuItem,
-            this.optionsToolStripMenuItem});
+            this.optionsToolStripMenuItem,
+            this.aboutToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Padding = new System.Windows.Forms.Padding(6, 4, 0, 4);
-            this.menuStrip.Size = new System.Drawing.Size(936, 60);
+            this.menuStrip.Size = new System.Drawing.Size(468, 31);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -91,13 +94,13 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 52);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 27);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(139, 44);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -106,13 +109,13 @@
             this.programsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.randomPasswordGeneratorToolStripMenuItem});
             this.programsToolStripMenuItem.Name = "programsToolStripMenuItem";
-            this.programsToolStripMenuItem.Size = new System.Drawing.Size(151, 52);
+            this.programsToolStripMenuItem.Size = new System.Drawing.Size(70, 27);
             this.programsToolStripMenuItem.Text = "Programs";
             // 
             // randomPasswordGeneratorToolStripMenuItem
             // 
             this.randomPasswordGeneratorToolStripMenuItem.Name = "randomPasswordGeneratorToolStripMenuItem";
-            this.randomPasswordGeneratorToolStripMenuItem.Size = new System.Drawing.Size(465, 44);
+            this.randomPasswordGeneratorToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
             this.randomPasswordGeneratorToolStripMenuItem.Text = "Random Password Generator";
             this.randomPasswordGeneratorToolStripMenuItem.Click += new System.EventHandler(this.randomPasswordGeneratorToolStripMenuItem_Click);
             // 
@@ -123,25 +126,25 @@
             this.programOptionToolStripMenuItem,
             this.resetSettingsToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 52);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 27);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
             // uIOptionsToolStripMenuItem
             // 
             this.uIOptionsToolStripMenuItem.Name = "uIOptionsToolStripMenuItem";
-            this.uIOptionsToolStripMenuItem.Size = new System.Drawing.Size(301, 44);
+            this.uIOptionsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.uIOptionsToolStripMenuItem.Text = "UI Options";
             // 
             // programOptionToolStripMenuItem
             // 
             this.programOptionToolStripMenuItem.Name = "programOptionToolStripMenuItem";
-            this.programOptionToolStripMenuItem.Size = new System.Drawing.Size(301, 44);
+            this.programOptionToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.programOptionToolStripMenuItem.Text = "Program Option";
             // 
             // resetSettingsToolStripMenuItem
             // 
             this.resetSettingsToolStripMenuItem.Name = "resetSettingsToolStripMenuItem";
-            this.resetSettingsToolStripMenuItem.Size = new System.Drawing.Size(301, 44);
+            this.resetSettingsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.resetSettingsToolStripMenuItem.Text = "Reset Settings";
             this.resetSettingsToolStripMenuItem.Click += new System.EventHandler(this.resetSettingsToolStripMenuItem_Click);
             // 
@@ -151,22 +154,48 @@
             this.tableLayoutPanel1.SetColumnSpan(this.usernameDisplay, 2);
             this.usernameDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.usernameDisplay.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.usernameDisplay.Location = new System.Drawing.Point(942, 0);
-            this.usernameDisplay.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.usernameDisplay.Location = new System.Drawing.Point(471, 0);
             this.usernameDisplay.Name = "usernameDisplay";
-            this.usernameDisplay.Size = new System.Drawing.Size(300, 60);
+            this.usernameDisplay.Size = new System.Drawing.Size(150, 31);
             this.usernameDisplay.TabIndex = 1;
             this.usernameDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // programTitle
+            // 
+            this.programTitle.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.programTitle, 8);
+            this.programTitle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.programTitle.Font = new System.Drawing.Font("MineCrafter 3", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.programTitle.Location = new System.Drawing.Point(3, 31);
+            this.programTitle.Name = "programTitle";
+            this.programTitle.Size = new System.Drawing.Size(618, 97);
+            this.programTitle.TabIndex = 2;
+            this.programTitle.Text = "Welcome to xNovax\'s Multi-Tool V2 Program";
+            this.programTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.infoToolStripMenuItem});
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 27);
+            this.aboutToolStripMenuItem.Text = "About";
+            // 
+            // infoToolStripMenuItem
+            // 
+            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.infoToolStripMenuItem.Text = "Info";
+            this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
+            // 
             // programHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1248, 812);
+            this.ClientSize = new System.Drawing.Size(624, 422);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "programHome";
             this.Text = "Home";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.programHome_FormClosing);
@@ -192,5 +221,8 @@
         private System.Windows.Forms.ToolStripMenuItem programOptionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem resetSettingsToolStripMenuItem;
         private System.Windows.Forms.Label usernameDisplay;
+        private System.Windows.Forms.Label programTitle;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
     }
 }

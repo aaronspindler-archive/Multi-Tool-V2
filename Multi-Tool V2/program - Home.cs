@@ -10,6 +10,7 @@ namespace Multi_Tool_V2
         //Start of Global Variable Declaration
         private readonly String username = Settings.Default.userName;
         //End of Global Variable Declaration
+
         public programHome()
         {
             InitializeComponent();
@@ -45,6 +46,12 @@ namespace Multi_Tool_V2
         private void resetSettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Settings.Default.Reset();
+        }
+
+        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var pi = new programInfo();
+            pi.Show();
         }
     }
 }

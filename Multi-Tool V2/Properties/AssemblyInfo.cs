@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Multi-Tool V2")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A compilation of programs that I find useful or use on a day to day basis. This will also be the host for projects and small programs that I will be just playing around with.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("xNovax")]
 [assembly: AssemblyProduct("Multi-Tool V2")]
