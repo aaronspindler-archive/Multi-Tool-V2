@@ -33,6 +33,7 @@ namespace Multi_Tool_V2
                 normalPasswordSelected = true;
                 numberPasswordSelected = false;
                 specialCharPasswordSelected = false;
+                Multi_Tool_V2.Properties.Settings.Default.randomPasswordType = 0;
             }
             else
             {
@@ -49,6 +50,7 @@ namespace Multi_Tool_V2
                     normalPasswordSelected = false;
                     numberPasswordSelected = true;
                     specialCharPasswordSelected = false;
+                    Multi_Tool_V2.Properties.Settings.Default.randomPasswordType = 1;
                 }
                 else
                 {
@@ -65,6 +67,7 @@ namespace Multi_Tool_V2
                         normalPasswordSelected = false;
                         numberPasswordSelected = false;
                         specialCharPasswordSelected = true;
+                        Multi_Tool_V2.Properties.Settings.Default.randomPasswordType = 2;
                     }
                     else
                     {
@@ -79,6 +82,7 @@ namespace Multi_Tool_V2
                         normalPasswordSelected = false;
                         numberPasswordSelected = false;
                         specialCharPasswordSelected = false;
+                        Multi_Tool_V2.Properties.Settings.Default.randomPasswordType = 3;
                     }
                 }
             }

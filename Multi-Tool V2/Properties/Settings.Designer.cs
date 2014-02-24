@@ -94,5 +94,17 @@ namespace Multi_Tool_V2.Properties {
                 this["specialCharPass"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int randomPasswordType {
+            get {
+                return ((int)(this["randomPasswordType"]));
+            }
+            set {
+                this["randomPasswordType"] = value;
+            }
+        }
     }
 }

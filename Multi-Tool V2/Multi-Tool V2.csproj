@@ -96,7 +96,6 @@
       <DependentUpon>program - Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RandomPassword.cs" />
     <Compile Include="randomPassword_Home.cs">
       <SubType>Form</SubType>
     </Compile>
