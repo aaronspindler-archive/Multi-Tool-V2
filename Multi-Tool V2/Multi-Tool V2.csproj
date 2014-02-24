@@ -88,6 +88,12 @@
     <Compile Include="loginForm - Main.Designer.cs">
       <DependentUpon>loginForm - Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="minecraftUserMaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="minecraftUserMaker.Designer.cs">
+      <DependentUpon>minecraftUserMaker.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="program - Home.cs">
       <SubType>Form</SubType>
@@ -116,6 +122,9 @@
     </Compile>
     <EmbeddedResource Include="loginForm - Main.resx">
       <DependentUpon>loginForm - Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="minecraftUserMaker.resx">
+      <DependentUpon>minecraftUserMaker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="program - Home.resx">
       <DependentUpon>program - Home.cs</DependentUpon>
@@ -179,6 +188,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Program Information\to-do list.txt" />
+    <None Include="Resources\minecraft-icon-ico.ico" />
     <None Include="Resources\randomPasswordGeneratorIcon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

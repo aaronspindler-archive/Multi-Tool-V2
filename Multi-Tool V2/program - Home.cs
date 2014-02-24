@@ -37,21 +37,27 @@ namespace Multi_Tool_V2
             usernameDisplay.Text = ("Logged in as: " + username);
         }
 
+        private void resetSettingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Settings.Default.Reset();
+        }
+
         private void randomPasswordGeneratorToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var rp = new randomPassword_Home();
             rp.Show();
         }
 
-        private void resetSettingsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Settings.Default.Reset();
-        }
-
         private void infoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var pi = new programInfo();
             pi.Show();
+        }
+
+        private void minecraftUserMakerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var mum = new minecraftUserMaker();
+            mum.Show();
         }
     }
 }

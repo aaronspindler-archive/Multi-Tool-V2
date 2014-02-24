@@ -39,10 +39,11 @@
             this.uIOptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.programOptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usernameDisplay = new System.Windows.Forms.Label();
-            this.programTitle = new System.Windows.Forms.Label();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usernameDisplay = new System.Windows.Forms.Label();
+            this.programTitle = new System.Windows.Forms.Label();
+            this.minecraftUserMakerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -107,7 +108,8 @@
             // programsToolStripMenuItem
             // 
             this.programsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.randomPasswordGeneratorToolStripMenuItem});
+            this.randomPasswordGeneratorToolStripMenuItem,
+            this.minecraftUserMakerToolStripMenuItem});
             this.programsToolStripMenuItem.Name = "programsToolStripMenuItem";
             this.programsToolStripMenuItem.Size = new System.Drawing.Size(70, 27);
             this.programsToolStripMenuItem.Text = "Programs";
@@ -148,6 +150,21 @@
             this.resetSettingsToolStripMenuItem.Text = "Reset Settings";
             this.resetSettingsToolStripMenuItem.Click += new System.EventHandler(this.resetSettingsToolStripMenuItem_Click);
             // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.infoToolStripMenuItem});
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 27);
+            this.aboutToolStripMenuItem.Text = "About";
+            // 
+            // infoToolStripMenuItem
+            // 
+            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(95, 22);
+            this.infoToolStripMenuItem.Text = "Info";
+            this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
+            // 
             // usernameDisplay
             // 
             this.usernameDisplay.AutoSize = true;
@@ -173,20 +190,12 @@
             this.programTitle.Text = "Welcome to xNovax\'s Multi-Tool V2 Program";
             this.programTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // aboutToolStripMenuItem
+            // minecraftUserMakerToolStripMenuItem
             // 
-            this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.infoToolStripMenuItem});
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 27);
-            this.aboutToolStripMenuItem.Text = "About";
-            // 
-            // infoToolStripMenuItem
-            // 
-            this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            this.infoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.infoToolStripMenuItem.Text = "Info";
-            this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
+            this.minecraftUserMakerToolStripMenuItem.Name = "minecraftUserMakerToolStripMenuItem";
+            this.minecraftUserMakerToolStripMenuItem.Size = new System.Drawing.Size(227, 22);
+            this.minecraftUserMakerToolStripMenuItem.Text = "Minecraft User Maker";
+            this.minecraftUserMakerToolStripMenuItem.Click += new System.EventHandler(this.minecraftUserMakerToolStripMenuItem_Click);
             // 
             // programHome
             // 
@@ -224,5 +233,6 @@
         private System.Windows.Forms.Label programTitle;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem minecraftUserMakerToolStripMenuItem;
     }
 }
