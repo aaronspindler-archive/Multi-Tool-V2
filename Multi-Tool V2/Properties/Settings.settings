@@ -8,9 +8,6 @@
     <Setting Name="userName" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="applicationNeedsToClose" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
-    </Setting>
     <Setting Name="normalPass" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>

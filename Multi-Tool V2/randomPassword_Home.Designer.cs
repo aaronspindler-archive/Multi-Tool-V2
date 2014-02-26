@@ -184,7 +184,7 @@
             this.numberOfPasswordsUD.Location = new System.Drawing.Point(120, 72);
             this.numberOfPasswordsUD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.numberOfPasswordsUD.Maximum = new decimal(new int[] {
-            10000,
+            100000,
             0,
             0,
             0});
@@ -225,7 +225,7 @@
             this.lengthOfPasswordsUD.Location = new System.Drawing.Point(120, 142);
             this.lengthOfPasswordsUD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lengthOfPasswordsUD.Maximum = new decimal(new int[] {
-            512,
+            1024,
             0,
             0,
             0});

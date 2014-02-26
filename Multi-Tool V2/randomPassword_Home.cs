@@ -101,9 +101,9 @@ namespace Multi_Tool_V2
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 var writer = new StreamWriter(saveFileDialog.FileName);
-                for (var i = 0; i < numberOfPasswords; i++)
+                for (int i = 0; i < numberOfPasswords; i++)
                 {
-                    for (var j = 0; j < lengthOfPassword; j++)
+                    for (int j = 0; j < lengthOfPassword; j++)
                     {
                         getRandomCharacter();
                         writer.Write(randomCharacter);
@@ -126,8 +126,8 @@ namespace Multi_Tool_V2
         //General error message with a customizable error code.
         public void errorOccured()
         {
-            var messageBoxContents = ("An error has occured: " + errorCode);
-            var messageBoxTitle = ("Error");
+            string messageBoxContents = ("An error has occured: " + errorCode);
+            string messageBoxTitle = ("Error");
             MessageBox.Show(messageBoxContents, messageBoxTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 

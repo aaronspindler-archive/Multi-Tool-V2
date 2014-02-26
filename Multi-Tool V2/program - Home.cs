@@ -56,7 +56,7 @@ namespace Multi_Tool_V2
 
         private void minecraftUserMakerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var mum = new minecraftUserMaker();
+            var mum = new minecraftUserMaker_Home();
             mum.Show();
         }
     }

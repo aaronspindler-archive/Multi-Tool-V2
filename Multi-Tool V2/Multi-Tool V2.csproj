@@ -88,11 +88,11 @@
     <Compile Include="loginForm - Main.Designer.cs">
       <DependentUpon>loginForm - Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="minecraftUserMaker.cs">
+    <Compile Include="minecraftUserMaker_Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="minecraftUserMaker.Designer.cs">
-      <DependentUpon>minecraftUserMaker.cs</DependentUpon>
+    <Compile Include="minecraftUserMaker_Home.Designer.cs">
+      <DependentUpon>minecraftUserMaker_Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="program - Home.cs">
@@ -123,8 +123,8 @@
     <EmbeddedResource Include="loginForm - Main.resx">
       <DependentUpon>loginForm - Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="minecraftUserMaker.resx">
-      <DependentUpon>minecraftUserMaker.cs</DependentUpon>
+    <EmbeddedResource Include="minecraftUserMaker_Home.resx">
+      <DependentUpon>minecraftUserMaker_Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="program - Home.resx">
       <DependentUpon>program - Home.cs</DependentUpon>
@@ -184,6 +184,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Program Information\change-log.txt" />
+    <Content Include="Program Information\logininformation.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Program Information\README.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

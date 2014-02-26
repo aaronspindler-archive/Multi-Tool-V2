@@ -50,18 +50,6 @@ namespace Multi_Tool_V2.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool applicationNeedsToClose {
-            get {
-                return ((bool)(this["applicationNeedsToClose"]));
-            }
-            set {
-                this["applicationNeedsToClose"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool normalPass {
             get {
                 return ((bool)(this["normalPass"]));

@@ -1,0 +1,3 @@
+﻿Username and Password for logging into the login form. In the future you will be able to make your own user.
+Username : xNovax
+Password : password

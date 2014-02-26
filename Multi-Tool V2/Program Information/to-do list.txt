@@ -3,6 +3,8 @@
 - Setup the login form [DONE]
 - Setup the user creator [DELAYED]
 - Create a main form for after the user logs in [DONE]
-- Setup the programHomeForm
-- Write a random password generator
-- Write a calculator
+- Setup the programHomeForm [DONE]
+- Write a random password generator [DONE]
+- Create a calculator
+- Create a minecraft user maker [DONE]
+- Create a dice roller
