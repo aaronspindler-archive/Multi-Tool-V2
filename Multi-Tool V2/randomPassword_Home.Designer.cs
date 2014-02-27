@@ -70,16 +70,17 @@
             this.tableLayoutPanel1.Controls.Add(this.lengthOfPasswordsUD, 2, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(475, 257);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(950, 494);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // menuStrip
@@ -91,7 +92,8 @@
             this.toolsToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(354, 25);
+            this.menuStrip.Padding = new System.Windows.Forms.Padding(12, 4, 0, 4);
+            this.menuStrip.Size = new System.Drawing.Size(708, 48);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -100,13 +102,13 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 21);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 40);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(127, 36);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -115,13 +117,13 @@
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optionsToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(48, 21);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(84, 40);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(174, 36);
             this.optionsToolStripMenuItem.Text = "Options";
             this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
@@ -131,9 +133,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.usernameDisplay, 2);
             this.usernameDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.usernameDisplay.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.usernameDisplay.Location = new System.Drawing.Point(357, 0);
+            this.usernameDisplay.Location = new System.Drawing.Point(714, 0);
+            this.usernameDisplay.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.usernameDisplay.Name = "usernameDisplay";
-            this.usernameDisplay.Size = new System.Drawing.Size(115, 25);
+            this.usernameDisplay.Size = new System.Drawing.Size(230, 48);
             this.usernameDisplay.TabIndex = 1;
             this.usernameDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -143,10 +146,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.numberOfPasswordsTitle, 8);
             this.numberOfPasswordsTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numberOfPasswordsTitle.Font = new System.Drawing.Font("Modern No. 20", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numberOfPasswordsTitle.Location = new System.Drawing.Point(2, 25);
-            this.numberOfPasswordsTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.numberOfPasswordsTitle.Location = new System.Drawing.Point(4, 48);
+            this.numberOfPasswordsTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.numberOfPasswordsTitle.Name = "numberOfPasswordsTitle";
-            this.numberOfPasswordsTitle.Size = new System.Drawing.Size(471, 45);
+            this.numberOfPasswordsTitle.Size = new System.Drawing.Size(942, 87);
             this.numberOfPasswordsTitle.TabIndex = 1;
             this.numberOfPasswordsTitle.Text = "Enter the number of passwords you want to output to a file";
             this.numberOfPasswordsTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -155,10 +158,10 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.createButton, 2);
             this.createButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.createButton.Location = new System.Drawing.Point(179, 167);
-            this.createButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.createButton.Location = new System.Drawing.Point(358, 322);
+            this.createButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.createButton.Name = "createButton";
-            this.createButton.Size = new System.Drawing.Size(114, 41);
+            this.createButton.Size = new System.Drawing.Size(228, 79);
             this.createButton.TabIndex = 3;
             this.createButton.Text = "Create";
             this.createButton.UseVisualStyleBackColor = true;
@@ -170,10 +173,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.outputLabel, 8);
             this.outputLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.outputLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.outputLabel.Location = new System.Drawing.Point(2, 210);
-            this.outputLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.outputLabel.Location = new System.Drawing.Point(4, 405);
+            this.outputLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(471, 47);
+            this.outputLabel.Size = new System.Drawing.Size(942, 89);
             this.outputLabel.TabIndex = 4;
             this.outputLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -181,8 +184,8 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.numberOfPasswordsUD, 4);
             this.numberOfPasswordsUD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numberOfPasswordsUD.Location = new System.Drawing.Point(120, 72);
-            this.numberOfPasswordsUD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numberOfPasswordsUD.Location = new System.Drawing.Point(240, 139);
+            this.numberOfPasswordsUD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numberOfPasswordsUD.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -194,7 +197,7 @@
             0,
             0});
             this.numberOfPasswordsUD.Name = "numberOfPasswordsUD";
-            this.numberOfPasswordsUD.Size = new System.Drawing.Size(232, 20);
+            this.numberOfPasswordsUD.Size = new System.Drawing.Size(464, 31);
             this.numberOfPasswordsUD.TabIndex = 5;
             this.numberOfPasswordsUD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.numberOfPasswordsUD.Value = new decimal(new int[] {
@@ -210,10 +213,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.lengthOfPasswordsTitle, 8);
             this.lengthOfPasswordsTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lengthOfPasswordsTitle.Font = new System.Drawing.Font("Modern No. 20", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lengthOfPasswordsTitle.Location = new System.Drawing.Point(2, 95);
-            this.lengthOfPasswordsTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lengthOfPasswordsTitle.Location = new System.Drawing.Point(4, 183);
+            this.lengthOfPasswordsTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lengthOfPasswordsTitle.Name = "lengthOfPasswordsTitle";
-            this.lengthOfPasswordsTitle.Size = new System.Drawing.Size(471, 45);
+            this.lengthOfPasswordsTitle.Size = new System.Drawing.Size(942, 87);
             this.lengthOfPasswordsTitle.TabIndex = 6;
             this.lengthOfPasswordsTitle.Text = "Enter the length of the passwords you want";
             this.lengthOfPasswordsTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -222,8 +225,8 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.lengthOfPasswordsUD, 4);
             this.lengthOfPasswordsUD.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lengthOfPasswordsUD.Location = new System.Drawing.Point(120, 142);
-            this.lengthOfPasswordsUD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lengthOfPasswordsUD.Location = new System.Drawing.Point(240, 274);
+            this.lengthOfPasswordsUD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lengthOfPasswordsUD.Maximum = new decimal(new int[] {
             1024,
             0,
@@ -235,7 +238,7 @@
             0,
             0});
             this.lengthOfPasswordsUD.Name = "lengthOfPasswordsUD";
-            this.lengthOfPasswordsUD.Size = new System.Drawing.Size(232, 20);
+            this.lengthOfPasswordsUD.Size = new System.Drawing.Size(464, 31);
             this.lengthOfPasswordsUD.TabIndex = 7;
             this.lengthOfPasswordsUD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.lengthOfPasswordsUD.Value = new decimal(new int[] {
@@ -251,13 +254,14 @@
             // 
             // randomPassword_Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 257);
+            this.ClientSize = new System.Drawing.Size(950, 494);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "randomPassword_Home";
             this.Text = "Random Password Generator";
             this.Load += new System.EventHandler(this.randomPassword_Home_Load);

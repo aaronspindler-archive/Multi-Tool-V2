@@ -63,6 +63,16 @@ namespace Multi_Tool_V2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
+        internal static System.Drawing.Icon dice {
+            get {
+                object obj = ResourceManager.GetObject("dice", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
         internal static System.Drawing.Icon minecraft_icon_ico {
             get {
                 object obj = ResourceManager.GetObject("minecraft_icon_ico", resourceCulture);

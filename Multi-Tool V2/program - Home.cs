@@ -59,5 +59,11 @@ namespace Multi_Tool_V2
             var mum = new minecraftUserMaker_Home();
             mum.Show();
         }
+
+        private void rollTheDiceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var rtd = new rtd();
+            rtd.Show();
+        }
     }
 }

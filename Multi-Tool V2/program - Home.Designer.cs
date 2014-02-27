@@ -36,6 +36,7 @@
             this.programsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.randomPasswordGeneratorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.minecraftUserMakerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rollTheDiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uIOptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.programOptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -64,7 +65,7 @@
             this.tableLayoutPanel1.Controls.Add(this.programTitle, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
@@ -97,13 +98,13 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 52);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 52);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(139, 44);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(127, 36);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -111,24 +112,32 @@
             // 
             this.programsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.randomPasswordGeneratorToolStripMenuItem,
-            this.minecraftUserMakerToolStripMenuItem});
+            this.minecraftUserMakerToolStripMenuItem,
+            this.rollTheDiceToolStripMenuItem});
             this.programsToolStripMenuItem.Name = "programsToolStripMenuItem";
-            this.programsToolStripMenuItem.Size = new System.Drawing.Size(151, 52);
+            this.programsToolStripMenuItem.Size = new System.Drawing.Size(127, 52);
             this.programsToolStripMenuItem.Text = "Programs";
             // 
             // randomPasswordGeneratorToolStripMenuItem
             // 
             this.randomPasswordGeneratorToolStripMenuItem.Name = "randomPasswordGeneratorToolStripMenuItem";
-            this.randomPasswordGeneratorToolStripMenuItem.Size = new System.Drawing.Size(465, 44);
+            this.randomPasswordGeneratorToolStripMenuItem.Size = new System.Drawing.Size(397, 36);
             this.randomPasswordGeneratorToolStripMenuItem.Text = "Random Password Generator";
             this.randomPasswordGeneratorToolStripMenuItem.Click += new System.EventHandler(this.randomPasswordGeneratorToolStripMenuItem_Click);
             // 
             // minecraftUserMakerToolStripMenuItem
             // 
             this.minecraftUserMakerToolStripMenuItem.Name = "minecraftUserMakerToolStripMenuItem";
-            this.minecraftUserMakerToolStripMenuItem.Size = new System.Drawing.Size(465, 44);
+            this.minecraftUserMakerToolStripMenuItem.Size = new System.Drawing.Size(397, 36);
             this.minecraftUserMakerToolStripMenuItem.Text = "Minecraft User Maker";
             this.minecraftUserMakerToolStripMenuItem.Click += new System.EventHandler(this.minecraftUserMakerToolStripMenuItem_Click);
+            // 
+            // rollTheDiceToolStripMenuItem
+            // 
+            this.rollTheDiceToolStripMenuItem.Name = "rollTheDiceToolStripMenuItem";
+            this.rollTheDiceToolStripMenuItem.Size = new System.Drawing.Size(397, 36);
+            this.rollTheDiceToolStripMenuItem.Text = "Roll The Dice";
+            this.rollTheDiceToolStripMenuItem.Click += new System.EventHandler(this.rollTheDiceToolStripMenuItem_Click);
             // 
             // optionsToolStripMenuItem
             // 
@@ -137,25 +146,25 @@
             this.programOptionToolStripMenuItem,
             this.resetSettingsToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(130, 52);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(111, 52);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
             // uIOptionsToolStripMenuItem
             // 
             this.uIOptionsToolStripMenuItem.Name = "uIOptionsToolStripMenuItem";
-            this.uIOptionsToolStripMenuItem.Size = new System.Drawing.Size(301, 44);
+            this.uIOptionsToolStripMenuItem.Size = new System.Drawing.Size(261, 36);
             this.uIOptionsToolStripMenuItem.Text = "UI Options";
             // 
             // programOptionToolStripMenuItem
             // 
             this.programOptionToolStripMenuItem.Name = "programOptionToolStripMenuItem";
-            this.programOptionToolStripMenuItem.Size = new System.Drawing.Size(301, 44);
+            this.programOptionToolStripMenuItem.Size = new System.Drawing.Size(261, 36);
             this.programOptionToolStripMenuItem.Text = "Program Option";
             // 
             // resetSettingsToolStripMenuItem
             // 
             this.resetSettingsToolStripMenuItem.Name = "resetSettingsToolStripMenuItem";
-            this.resetSettingsToolStripMenuItem.Size = new System.Drawing.Size(301, 44);
+            this.resetSettingsToolStripMenuItem.Size = new System.Drawing.Size(261, 36);
             this.resetSettingsToolStripMenuItem.Text = "Reset Settings";
             this.resetSettingsToolStripMenuItem.Click += new System.EventHandler(this.resetSettingsToolStripMenuItem_Click);
             // 
@@ -164,13 +173,13 @@
             this.aboutToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.infoToolStripMenuItem});
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(108, 52);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(92, 52);
             this.aboutToolStripMenuItem.Text = "About";
             // 
             // infoToolStripMenuItem
             // 
             this.infoToolStripMenuItem.Name = "infoToolStripMenuItem";
-            this.infoToolStripMenuItem.Size = new System.Drawing.Size(144, 44);
+            this.infoToolStripMenuItem.Size = new System.Drawing.Size(132, 36);
             this.infoToolStripMenuItem.Text = "Info";
             this.infoToolStripMenuItem.Click += new System.EventHandler(this.infoToolStripMenuItem_Click);
             // 
@@ -192,7 +201,7 @@
             this.programTitle.AutoSize = true;
             this.tableLayoutPanel1.SetColumnSpan(this.programTitle, 8);
             this.programTitle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.programTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.programTitle.Font = new System.Drawing.Font("Lucida Fax", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.programTitle.Location = new System.Drawing.Point(6, 60);
             this.programTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.programTitle.Name = "programTitle";
@@ -207,9 +216,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1248, 812);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "programHome";
             this.Text = "Home";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.programHome_FormClosing);
@@ -239,5 +249,6 @@
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem minecraftUserMakerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem rollTheDiceToolStripMenuItem;
     }
 }

@@ -7,4 +7,4 @@
 - Write a random password generator [DONE]
 - Create a calculator
 - Create a minecraft user maker [DONE]
-- Create a dice roller
+- Create a dice roller [DONE]

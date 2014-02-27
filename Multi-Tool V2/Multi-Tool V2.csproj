@@ -120,6 +120,12 @@
     <Compile Include="randomPassword_Options.Designer.cs">
       <DependentUpon>randomPassword_Options.cs</DependentUpon>
     </Compile>
+    <Compile Include="rtd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rtd.Designer.cs">
+      <DependentUpon>rtd.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="loginForm - Main.resx">
       <DependentUpon>loginForm - Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="randomPassword_Options.resx">
       <DependentUpon>randomPassword_Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rtd.resx">
+      <DependentUpon>rtd.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Multi-Tool V2_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
@@ -191,6 +200,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Program Information\to-do list.txt" />
+    <None Include="Resources\dice.ico" />
     <None Include="Resources\minecraft-icon-ico.ico" />
     <None Include="Resources\randomPasswordGeneratorIcon.ico" />
   </ItemGroup>
