@@ -37,14 +37,17 @@
             this.randomPasswordGeneratorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.minecraftUserMakerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rollTheDiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.encrypterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.singleStringToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.encrypterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.decrypterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.uIOptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.programOptionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usernameDisplay = new System.Windows.Forms.Label();
             this.programTitle = new System.Windows.Forms.Label();
+            this.preferencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -104,7 +107,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(127, 36);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(244, 36);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -113,7 +116,8 @@
             this.programsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.randomPasswordGeneratorToolStripMenuItem,
             this.minecraftUserMakerToolStripMenuItem,
-            this.rollTheDiceToolStripMenuItem});
+            this.rollTheDiceToolStripMenuItem,
+            this.encrypterToolStripMenuItem});
             this.programsToolStripMenuItem.Name = "programsToolStripMenuItem";
             this.programsToolStripMenuItem.Size = new System.Drawing.Size(127, 52);
             this.programsToolStripMenuItem.Text = "Programs";
@@ -139,32 +143,49 @@
             this.rollTheDiceToolStripMenuItem.Text = "Roll The Dice";
             this.rollTheDiceToolStripMenuItem.Click += new System.EventHandler(this.rollTheDiceToolStripMenuItem_Click);
             // 
+            // encrypterToolStripMenuItem
+            // 
+            this.encrypterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.singleStringToolStripMenuItem});
+            this.encrypterToolStripMenuItem.Name = "encrypterToolStripMenuItem";
+            this.encrypterToolStripMenuItem.Size = new System.Drawing.Size(397, 36);
+            this.encrypterToolStripMenuItem.Text = "Encrypter";
+            // 
+            // singleStringToolStripMenuItem
+            // 
+            this.singleStringToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.encrypterToolStripMenuItem1,
+            this.decrypterToolStripMenuItem});
+            this.singleStringToolStripMenuItem.Name = "singleStringToolStripMenuItem";
+            this.singleStringToolStripMenuItem.Size = new System.Drawing.Size(226, 36);
+            this.singleStringToolStripMenuItem.Text = "Single String";
+            // 
+            // encrypterToolStripMenuItem1
+            // 
+            this.encrypterToolStripMenuItem1.Name = "encrypterToolStripMenuItem1";
+            this.encrypterToolStripMenuItem1.Size = new System.Drawing.Size(194, 36);
+            this.encrypterToolStripMenuItem1.Text = "Encrypter";
+            this.encrypterToolStripMenuItem1.Click += new System.EventHandler(this.encrypterToolStripMenuItem1_Click);
+            // 
+            // decrypterToolStripMenuItem
+            // 
+            this.decrypterToolStripMenuItem.Name = "decrypterToolStripMenuItem";
+            this.decrypterToolStripMenuItem.Size = new System.Drawing.Size(194, 36);
+            this.decrypterToolStripMenuItem.Text = "Decrypter";
+            // 
             // optionsToolStripMenuItem
             // 
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.uIOptionsToolStripMenuItem,
-            this.programOptionToolStripMenuItem,
-            this.resetSettingsToolStripMenuItem});
+            this.resetSettingsToolStripMenuItem,
+            this.preferencesToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(111, 52);
             this.optionsToolStripMenuItem.Text = "Options";
             // 
-            // uIOptionsToolStripMenuItem
-            // 
-            this.uIOptionsToolStripMenuItem.Name = "uIOptionsToolStripMenuItem";
-            this.uIOptionsToolStripMenuItem.Size = new System.Drawing.Size(261, 36);
-            this.uIOptionsToolStripMenuItem.Text = "UI Options";
-            // 
-            // programOptionToolStripMenuItem
-            // 
-            this.programOptionToolStripMenuItem.Name = "programOptionToolStripMenuItem";
-            this.programOptionToolStripMenuItem.Size = new System.Drawing.Size(261, 36);
-            this.programOptionToolStripMenuItem.Text = "Program Option";
-            // 
             // resetSettingsToolStripMenuItem
             // 
             this.resetSettingsToolStripMenuItem.Name = "resetSettingsToolStripMenuItem";
-            this.resetSettingsToolStripMenuItem.Size = new System.Drawing.Size(261, 36);
+            this.resetSettingsToolStripMenuItem.Size = new System.Drawing.Size(244, 36);
             this.resetSettingsToolStripMenuItem.Text = "Reset Settings";
             this.resetSettingsToolStripMenuItem.Click += new System.EventHandler(this.resetSettingsToolStripMenuItem_Click);
             // 
@@ -210,6 +231,13 @@
             this.programTitle.Text = "Welcome to xNovax\'s Multi-Tool V2 Program";
             this.programTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // preferencesToolStripMenuItem
+            // 
+            this.preferencesToolStripMenuItem.Name = "preferencesToolStripMenuItem";
+            this.preferencesToolStripMenuItem.Size = new System.Drawing.Size(244, 36);
+            this.preferencesToolStripMenuItem.Text = "Preferences";
+            this.preferencesToolStripMenuItem.Click += new System.EventHandler(this.preferencesToolStripMenuItem_Click);
+            // 
             // programHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -241,8 +269,6 @@
         private System.Windows.Forms.ToolStripMenuItem programsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem randomPasswordGeneratorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem uIOptionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem programOptionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem resetSettingsToolStripMenuItem;
         private System.Windows.Forms.Label usernameDisplay;
         private System.Windows.Forms.Label programTitle;
@@ -250,5 +276,10 @@
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem minecraftUserMakerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem rollTheDiceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem encrypterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem singleStringToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem encrypterToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem decrypterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem preferencesToolStripMenuItem;
     }
 }

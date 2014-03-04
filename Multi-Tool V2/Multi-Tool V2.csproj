@@ -23,7 +23,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>http://www.http://xnovax.net/program_files/multi_tool/</UpdateUrl>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -107,6 +107,12 @@
     <Compile Include="programInfo.Designer.cs">
       <DependentUpon>programInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProgramPreferences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramPreferences.Designer.cs">
+      <DependentUpon>ProgramPreferences.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="randomPassword_Home.cs">
       <SubType>Form</SubType>
@@ -126,6 +132,12 @@
     <Compile Include="rtd.Designer.cs">
       <DependentUpon>rtd.cs</DependentUpon>
     </Compile>
+    <Compile Include="singleStringEncrypter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="singleStringEncrypter.Designer.cs">
+      <DependentUpon>singleStringEncrypter.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="loginForm - Main.resx">
       <DependentUpon>loginForm - Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="programInfo.resx">
       <DependentUpon>programInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramPreferences.resx">
+      <DependentUpon>ProgramPreferences.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -156,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="rtd.resx">
       <DependentUpon>rtd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleStringEncrypter.resx">
+      <DependentUpon>singleStringEncrypter.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Multi-Tool V2_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
@@ -200,6 +218,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Program Information\to-do list.txt" />
+    <None Include="Resources\settings.ico" />
+    <None Include="Resources\encrypter_icon.ico" />
     <None Include="Resources\dice.ico" />
     <None Include="Resources\minecraft-icon-ico.ico" />
     <None Include="Resources\randomPasswordGeneratorIcon.ico" />

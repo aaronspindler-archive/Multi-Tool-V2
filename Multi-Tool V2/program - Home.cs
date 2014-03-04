@@ -65,5 +65,17 @@ namespace Multi_Tool_V2
             var rtd = new rtd();
             rtd.Show();
         }
+
+        private void encrypterToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var sse = new singleStringEncrypter();
+            sse.Show();
+        }
+
+        private void preferencesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var pp = new ProgramPreferences();
+            pp.Show();
+        }
     }
 }

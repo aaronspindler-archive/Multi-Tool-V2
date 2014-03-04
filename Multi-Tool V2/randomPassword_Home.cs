@@ -40,8 +40,8 @@ namespace Multi_Tool_V2
 
         private readonly String username = Settings.Default.userName;
         private String errorCode = ("");
-        private decimal lengthOfPassword;
-        private decimal numberOfPasswords;
+        private decimal lengthOfPassword = 16;
+        private decimal numberOfPasswords = 1;
         private int passwordType;
         private string randomCharacter;
 
@@ -135,6 +135,7 @@ namespace Multi_Tool_V2
 
         private void createButton_Click(object sender, EventArgs e)
         {
+            passwordType = Multi_Tool_V2.Properties.Settings.Default.randomPasswordType;
             getRandomCharacter();
             printToFile();
         }

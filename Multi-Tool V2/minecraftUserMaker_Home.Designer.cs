@@ -70,7 +70,7 @@
             this.tableLayoutPanel1.Controls.Add(this.createFileButton, 3, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
@@ -87,7 +87,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.progressBar, 4);
             this.progressBar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.progressBar.Location = new System.Drawing.Point(4, 268);
-            this.progressBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.progressBar.Margin = new System.Windows.Forms.Padding(4);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(440, 40);
             this.progressBar.TabIndex = 1;
@@ -148,7 +148,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.usernameEntry, 3);
             this.usernameEntry.Dock = System.Windows.Forms.DockStyle.Fill;
             this.usernameEntry.Location = new System.Drawing.Point(452, 52);
-            this.usernameEntry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usernameEntry.Margin = new System.Windows.Forms.Padding(4);
             this.usernameEntry.Name = "usernameEntry";
             this.usernameEntry.Size = new System.Drawing.Size(328, 31);
             this.usernameEntry.TabIndex = 1;
@@ -172,7 +172,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.customPasswordEntry, 3);
             this.customPasswordEntry.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customPasswordEntry.Location = new System.Drawing.Point(452, 96);
-            this.customPasswordEntry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customPasswordEntry.Margin = new System.Windows.Forms.Padding(4);
             this.customPasswordEntry.Name = "customPasswordEntry";
             this.customPasswordEntry.Size = new System.Drawing.Size(328, 31);
             this.customPasswordEntry.TabIndex = 4;
@@ -185,7 +185,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.customPasswordCheckBox, 4);
             this.customPasswordCheckBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.customPasswordCheckBox.Location = new System.Drawing.Point(4, 96);
-            this.customPasswordCheckBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.customPasswordCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.customPasswordCheckBox.Name = "customPasswordCheckBox";
             this.customPasswordCheckBox.Size = new System.Drawing.Size(440, 36);
             this.customPasswordCheckBox.TabIndex = 5;
@@ -206,7 +206,7 @@
             "Confound Gaming Ultimate Skyblock",
             "Reaper Server"});
             this.serverSelector.Location = new System.Drawing.Point(228, 140);
-            this.serverSelector.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.serverSelector.Margin = new System.Windows.Forms.Padding(4);
             this.serverSelector.Name = "serverSelector";
             this.serverSelector.Size = new System.Drawing.Size(440, 33);
             this.serverSelector.TabIndex = 6;
@@ -218,7 +218,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.createFileButton, 2);
             this.createFileButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.createFileButton.Location = new System.Drawing.Point(340, 184);
-            this.createFileButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.createFileButton.Margin = new System.Windows.Forms.Padding(4);
             this.createFileButton.Name = "createFileButton";
             this.createFileButton.Size = new System.Drawing.Size(216, 76);
             this.createFileButton.TabIndex = 7;
@@ -239,7 +239,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "minecraftUserMaker_Home";
             this.Text = "Minecraft User Maker";
             this.Load += new System.EventHandler(this.minecraftUserMaker_Load);

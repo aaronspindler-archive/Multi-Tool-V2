@@ -70,7 +70,7 @@
             this.tableLayoutPanel1.Controls.Add(this.lengthOfPasswordsUD, 2, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
@@ -159,7 +159,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.createButton, 2);
             this.createButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.createButton.Location = new System.Drawing.Point(358, 322);
-            this.createButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.createButton.Margin = new System.Windows.Forms.Padding(4);
             this.createButton.Name = "createButton";
             this.createButton.Size = new System.Drawing.Size(228, 79);
             this.createButton.TabIndex = 3;
@@ -185,7 +185,7 @@
             this.tableLayoutPanel1.SetColumnSpan(this.numberOfPasswordsUD, 4);
             this.numberOfPasswordsUD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numberOfPasswordsUD.Location = new System.Drawing.Point(240, 139);
-            this.numberOfPasswordsUD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numberOfPasswordsUD.Margin = new System.Windows.Forms.Padding(4);
             this.numberOfPasswordsUD.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -226,9 +226,9 @@
             this.tableLayoutPanel1.SetColumnSpan(this.lengthOfPasswordsUD, 4);
             this.lengthOfPasswordsUD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lengthOfPasswordsUD.Location = new System.Drawing.Point(240, 274);
-            this.lengthOfPasswordsUD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lengthOfPasswordsUD.Margin = new System.Windows.Forms.Padding(4);
             this.lengthOfPasswordsUD.Maximum = new decimal(new int[] {
-            1024,
+            4096,
             0,
             0,
             0});
@@ -261,7 +261,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "randomPassword_Home";
             this.Text = "Random Password Generator";
             this.Load += new System.EventHandler(this.randomPassword_Home_Load);
