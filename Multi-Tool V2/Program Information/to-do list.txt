@@ -8,8 +8,8 @@
 - Create a calculator
 - Create a minecraft user maker [DONE]
 - Create a dice roller [DONE]
-- Create a single string encrypter
-- Create a single string decrypter
-- Create a multi-string encrypter
-- Create a multi-string decrypter
-- Create program preferences
+- Create a single string encrypter [Started]
+- Create a single string decrypter [Started]
+- Create a multi-string encrypter [Started]
+- Create a multi-string decrypter [Started]
+- Create program preferences [Started]

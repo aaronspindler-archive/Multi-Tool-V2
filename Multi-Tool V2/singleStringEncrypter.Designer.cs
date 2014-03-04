@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(singleStringEncrypter));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.keyInput = new System.Windows.Forms.TextBox();
+            this.encryptTextButton = new System.Windows.Forms.Button();
             this.usernameDisplay = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.encryptionKeyLabel = new System.Windows.Forms.Label();
             this.plainTextLabel = new System.Windows.Forms.Label();
-            this.encryptTextButton = new System.Windows.Forms.Button();
             this.encryptedTextOutput = new System.Windows.Forms.TextBox();
-            this.keyInput = new System.Windows.Forms.TextBox();
             this.plainTextInput = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -75,6 +75,28 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(949, 292);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // keyInput
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.keyInput, 3);
+            this.keyInput.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.keyInput.Location = new System.Drawing.Point(475, 51);
+            this.keyInput.Name = "keyInput";
+            this.keyInput.Size = new System.Drawing.Size(348, 31);
+            this.keyInput.TabIndex = 1;
+            this.keyInput.TextChanged += new System.EventHandler(this.keyInput_TextChanged);
+            // 
+            // encryptTextButton
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.encryptTextButton, 4);
+            this.encryptTextButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.encryptTextButton.Location = new System.Drawing.Point(239, 147);
+            this.encryptTextButton.Name = "encryptTextButton";
+            this.encryptTextButton.Size = new System.Drawing.Size(466, 90);
+            this.encryptTextButton.TabIndex = 1;
+            this.encryptTextButton.Text = "Encrypt Text";
+            this.encryptTextButton.UseVisualStyleBackColor = true;
+            this.encryptTextButton.Click += new System.EventHandler(this.encryptTextBuutton_Click);
+            // 
             // usernameDisplay
             // 
             this.usernameDisplay.AutoSize = true;
@@ -109,7 +131,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(244, 36);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(127, 36);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -137,37 +159,16 @@
             this.plainTextLabel.Text = "Enter String to Encrypt";
             this.plainTextLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // encryptTextButton
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.encryptTextButton, 4);
-            this.encryptTextButton.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.encryptTextButton.Location = new System.Drawing.Point(239, 147);
-            this.encryptTextButton.Name = "encryptTextButton";
-            this.encryptTextButton.Size = new System.Drawing.Size(466, 90);
-            this.encryptTextButton.TabIndex = 1;
-            this.encryptTextButton.Text = "Encrypt Text";
-            this.encryptTextButton.UseVisualStyleBackColor = true;
-            this.encryptTextButton.Click += new System.EventHandler(this.encryptTextBuutton_Click);
-            // 
             // encryptedTextOutput
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.encryptedTextOutput, 6);
             this.encryptedTextOutput.Dock = System.Windows.Forms.DockStyle.Fill;
             this.encryptedTextOutput.Location = new System.Drawing.Point(121, 243);
             this.encryptedTextOutput.Name = "encryptedTextOutput";
+            this.encryptedTextOutput.ReadOnly = true;
             this.encryptedTextOutput.Size = new System.Drawing.Size(702, 31);
             this.encryptedTextOutput.TabIndex = 4;
             this.encryptedTextOutput.MouseClick += new System.Windows.Forms.MouseEventHandler(this.encryptedTextOutput_MouseClick);
-            // 
-            // keyInput
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.keyInput, 3);
-            this.keyInput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.keyInput.Location = new System.Drawing.Point(475, 51);
-            this.keyInput.Name = "keyInput";
-            this.keyInput.Size = new System.Drawing.Size(348, 31);
-            this.keyInput.TabIndex = 1;
-            this.keyInput.TextChanged += new System.EventHandler(this.keyInput_TextChanged);
             // 
             // plainTextInput
             // 

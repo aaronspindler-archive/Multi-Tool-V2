@@ -16,4 +16,5 @@
  - Added a single string encrypter
  - Added a single string decrypter
  - Added program preferences
+ - Added new information to the home page
  ============================================================================================================

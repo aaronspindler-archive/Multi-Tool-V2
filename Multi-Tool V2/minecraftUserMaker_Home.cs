@@ -47,7 +47,7 @@ namespace Multi_Tool_V2
         {
             if (progressFull == false)
             {
-                for (int i = 0; i < 100; i++)
+                for (int i = 0; i < 101; i++)
                 {
                     progressBar.Value = (i);
                 }

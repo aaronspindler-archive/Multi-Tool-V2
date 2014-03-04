@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using Multi_Tool_V2.Properties;
 
 namespace Multi_Tool_V2
@@ -9,6 +10,7 @@ namespace Multi_Tool_V2
         //@author xNovax
         //Start of Global Variable Declaration
         private readonly String username = Settings.Default.userName;
+        string time = DateTime.Now.ToString("hh:mm:ss tt", System.Globalization.DateTimeFormatInfo.InvariantInfo);
         //End of Global Variable Declaration
 
         public programHome()
@@ -34,7 +36,15 @@ namespace Multi_Tool_V2
 
         private void programHome_Load(object sender, EventArgs e)
         {
+            //Set the usernamedisplay to your username
             usernameDisplay.Text = ("Logged in as: " + username);
+            //Sets the time label when the form loads
+            timeDisplay.Text = ("Time: " + time);
+
+            //Runs the timer_tick method everytime the timer ticks
+            timer.Tick += new EventHandler(timer_Tick);
+            //Start the timer
+            timer.Start();
         }
 
         private void resetSettingsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -76,6 +86,18 @@ namespace Multi_Tool_V2
         {
             var pp = new ProgramPreferences();
             pp.Show();
+        }
+
+        private void decrypterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var ssd = new singleStringDecrypter();
+            ssd.Show();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            time = DateTime.Now.ToString("hh:mm:ss tt", System.Globalization.DateTimeFormatInfo.InvariantInfo);
+            timeDisplay.Text = ("Time: " + time);
         }
     }
 }

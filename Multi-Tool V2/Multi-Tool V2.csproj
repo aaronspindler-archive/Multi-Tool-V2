@@ -132,6 +132,12 @@
     <Compile Include="rtd.Designer.cs">
       <DependentUpon>rtd.cs</DependentUpon>
     </Compile>
+    <Compile Include="singleStringDecrypter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="singleStringDecrypter.Designer.cs">
+      <DependentUpon>singleStringDecrypter.cs</DependentUpon>
+    </Compile>
     <Compile Include="singleStringEncrypter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="rtd.resx">
       <DependentUpon>rtd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="singleStringDecrypter.resx">
+      <DependentUpon>singleStringDecrypter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="singleStringEncrypter.resx">
       <DependentUpon>singleStringEncrypter.cs</DependentUpon>
