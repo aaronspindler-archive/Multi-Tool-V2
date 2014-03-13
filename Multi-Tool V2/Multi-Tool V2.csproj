@@ -82,6 +82,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="converter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="converter.Designer.cs">
+      <DependentUpon>converter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HTTPGet.cs" />
+    <Compile Include="listRandomizer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="listRandomizer.Designer.cs">
+      <DependentUpon>listRandomizer.cs</DependentUpon>
+    </Compile>
     <Compile Include="loginForm - Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +157,12 @@
     <Compile Include="singleStringEncrypter.Designer.cs">
       <DependentUpon>singleStringEncrypter.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="converter.resx">
+      <DependentUpon>converter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="listRandomizer.resx">
+      <DependentUpon>listRandomizer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="loginForm - Main.resx">
       <DependentUpon>loginForm - Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -226,7 +245,6 @@
     <Content Include="Program Information\README.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Program Information\to-do list.txt" />
     <None Include="Resources\settings.ico" />
     <None Include="Resources\encrypter_icon.ico" />
     <None Include="Resources\dice.ico" />

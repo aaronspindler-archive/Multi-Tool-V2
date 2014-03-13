@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(programHome));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.publicIPdisp = new System.Windows.Forms.Label();
+            this.timeDisplay = new System.Windows.Forms.Label();
+            this.informationDisplay = new System.Windows.Forms.Label();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,6 +45,7 @@
             this.singleStringToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.encrypterToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.decrypterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listRandomizerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetSettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.preferencesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,10 +53,9 @@
             this.infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usernameDisplay = new System.Windows.Forms.Label();
             this.programTitle = new System.Windows.Forms.Label();
-            this.informationDisplay = new System.Windows.Forms.Label();
-            this.timeDisplay = new System.Windows.Forms.Label();
-            this.ipDisplay = new System.Windows.Forms.Label();
+            this.localIPDisplay = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.converterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -68,24 +71,63 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.Controls.Add(this.publicIPdisp, 4, 5);
             this.tableLayoutPanel1.Controls.Add(this.timeDisplay, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.informationDisplay, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.menuStrip, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.usernameDisplay, 6, 0);
             this.tableLayoutPanel1.Controls.Add(this.programTitle, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.ipDisplay, 4, 4);
+            this.tableLayoutPanel1.Controls.Add(this.localIPDisplay, 4, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
+            this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1248, 812);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // publicIPdisp
+            // 
+            this.publicIPdisp.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.publicIPdisp, 4);
+            this.publicIPdisp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.publicIPdisp.Location = new System.Drawing.Point(627, 762);
+            this.publicIPdisp.Name = "publicIPdisp";
+            this.publicIPdisp.Size = new System.Drawing.Size(618, 50);
+            this.publicIPdisp.TabIndex = 1;
+            this.publicIPdisp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // timeDisplay
+            // 
+            this.timeDisplay.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.timeDisplay, 4);
+            this.timeDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timeDisplay.Location = new System.Drawing.Point(3, 714);
+            this.timeDisplay.Name = "timeDisplay";
+            this.tableLayoutPanel1.SetRowSpan(this.timeDisplay, 2);
+            this.timeDisplay.Size = new System.Drawing.Size(618, 98);
+            this.timeDisplay.TabIndex = 1;
+            this.timeDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // informationDisplay
+            // 
+            this.informationDisplay.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.informationDisplay, 8);
+            this.informationDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.informationDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.informationDisplay.Location = new System.Drawing.Point(3, 278);
+            this.informationDisplay.Name = "informationDisplay";
+            this.tableLayoutPanel1.SetRowSpan(this.informationDisplay, 2);
+            this.informationDisplay.Size = new System.Drawing.Size(1242, 436);
+            this.informationDisplay.TabIndex = 1;
+            this.informationDisplay.Text = resources.GetString("informationDisplay.Text");
+            this.informationDisplay.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // menuStrip
             // 
@@ -125,7 +167,9 @@
             this.randomPasswordGeneratorToolStripMenuItem,
             this.minecraftUserMakerToolStripMenuItem,
             this.rollTheDiceToolStripMenuItem,
-            this.encrypterToolStripMenuItem});
+            this.encrypterToolStripMenuItem,
+            this.listRandomizerToolStripMenuItem,
+            this.converterToolStripMenuItem});
             this.programsToolStripMenuItem.Name = "programsToolStripMenuItem";
             this.programsToolStripMenuItem.Size = new System.Drawing.Size(127, 52);
             this.programsToolStripMenuItem.Text = "Programs";
@@ -155,6 +199,7 @@
             // 
             this.encrypterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.singleStringToolStripMenuItem});
+            this.encrypterToolStripMenuItem.Enabled = false;
             this.encrypterToolStripMenuItem.Name = "encrypterToolStripMenuItem";
             this.encrypterToolStripMenuItem.Size = new System.Drawing.Size(397, 36);
             this.encrypterToolStripMenuItem.Text = "Encrypter";
@@ -164,24 +209,30 @@
             this.singleStringToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.encrypterToolStripMenuItem1,
             this.decrypterToolStripMenuItem});
-            this.singleStringToolStripMenuItem.Enabled = false;
             this.singleStringToolStripMenuItem.Name = "singleStringToolStripMenuItem";
-            this.singleStringToolStripMenuItem.Size = new System.Drawing.Size(244, 36);
+            this.singleStringToolStripMenuItem.Size = new System.Drawing.Size(226, 36);
             this.singleStringToolStripMenuItem.Text = "Single String";
             // 
             // encrypterToolStripMenuItem1
             // 
             this.encrypterToolStripMenuItem1.Name = "encrypterToolStripMenuItem1";
-            this.encrypterToolStripMenuItem1.Size = new System.Drawing.Size(244, 36);
+            this.encrypterToolStripMenuItem1.Size = new System.Drawing.Size(194, 36);
             this.encrypterToolStripMenuItem1.Text = "Encrypter";
             this.encrypterToolStripMenuItem1.Click += new System.EventHandler(this.encrypterToolStripMenuItem1_Click);
             // 
             // decrypterToolStripMenuItem
             // 
             this.decrypterToolStripMenuItem.Name = "decrypterToolStripMenuItem";
-            this.decrypterToolStripMenuItem.Size = new System.Drawing.Size(244, 36);
+            this.decrypterToolStripMenuItem.Size = new System.Drawing.Size(194, 36);
             this.decrypterToolStripMenuItem.Text = "Decrypter";
             this.decrypterToolStripMenuItem.Click += new System.EventHandler(this.decrypterToolStripMenuItem_Click);
+            // 
+            // listRandomizerToolStripMenuItem
+            // 
+            this.listRandomizerToolStripMenuItem.Name = "listRandomizerToolStripMenuItem";
+            this.listRandomizerToolStripMenuItem.Size = new System.Drawing.Size(397, 36);
+            this.listRandomizerToolStripMenuItem.Text = "List Randomizer";
+            this.listRandomizerToolStripMenuItem.Click += new System.EventHandler(this.listRandomizerToolStripMenuItem_Click);
             // 
             // optionsToolStripMenuItem
             // 
@@ -201,6 +252,7 @@
             // 
             // preferencesToolStripMenuItem
             // 
+            this.preferencesToolStripMenuItem.Enabled = false;
             this.preferencesToolStripMenuItem.Name = "preferencesToolStripMenuItem";
             this.preferencesToolStripMenuItem.Size = new System.Drawing.Size(241, 36);
             this.preferencesToolStripMenuItem.Text = "Preferences";
@@ -243,53 +295,33 @@
             this.programTitle.Location = new System.Drawing.Point(6, 60);
             this.programTitle.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.programTitle.Name = "programTitle";
-            this.programTitle.Size = new System.Drawing.Size(1236, 188);
+            this.programTitle.Size = new System.Drawing.Size(1236, 218);
             this.programTitle.TabIndex = 2;
             this.programTitle.Text = "Welcome to xNovax\'s Multi-Tool V2 Program";
             this.programTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // informationDisplay
+            // localIPDisplay
             // 
-            this.informationDisplay.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.informationDisplay, 8);
-            this.informationDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.informationDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.informationDisplay.Location = new System.Drawing.Point(3, 248);
-            this.informationDisplay.Name = "informationDisplay";
-            this.tableLayoutPanel1.SetRowSpan(this.informationDisplay, 2);
-            this.informationDisplay.Size = new System.Drawing.Size(1242, 376);
-            this.informationDisplay.TabIndex = 1;
-            this.informationDisplay.Text = "Change Log\r\n- Added Single String Encrypter\r\n\r\nOther Information\r\n- If a button i" +
-    "s disabled it means that the feature is not yet implemented or is a work in prog" +
-    "ress\r\n\r\n";
-            this.informationDisplay.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // timeDisplay
-            // 
-            this.timeDisplay.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.timeDisplay, 4);
-            this.timeDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.timeDisplay.Location = new System.Drawing.Point(3, 624);
-            this.timeDisplay.Name = "timeDisplay";
-            this.timeDisplay.Size = new System.Drawing.Size(618, 188);
-            this.timeDisplay.TabIndex = 1;
-            this.timeDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ipDisplay
-            // 
-            this.ipDisplay.AutoSize = true;
-            this.tableLayoutPanel1.SetColumnSpan(this.ipDisplay, 4);
-            this.ipDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ipDisplay.Location = new System.Drawing.Point(627, 624);
-            this.ipDisplay.Name = "ipDisplay";
-            this.ipDisplay.Size = new System.Drawing.Size(618, 188);
-            this.ipDisplay.TabIndex = 3;
-            this.ipDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.localIPDisplay.AutoSize = true;
+            this.tableLayoutPanel1.SetColumnSpan(this.localIPDisplay, 4);
+            this.localIPDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.localIPDisplay.Location = new System.Drawing.Point(627, 714);
+            this.localIPDisplay.Name = "localIPDisplay";
+            this.localIPDisplay.Size = new System.Drawing.Size(618, 48);
+            this.localIPDisplay.TabIndex = 3;
+            this.localIPDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer
             // 
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // converterToolStripMenuItem
+            // 
+            this.converterToolStripMenuItem.Name = "converterToolStripMenuItem";
+            this.converterToolStripMenuItem.Size = new System.Drawing.Size(397, 36);
+            this.converterToolStripMenuItem.Text = "Converter";
+            this.converterToolStripMenuItem.Click += new System.EventHandler(this.converterToolStripMenuItem_Click);
             // 
             // programHome
             // 
@@ -336,7 +368,10 @@
         private System.Windows.Forms.ToolStripMenuItem preferencesToolStripMenuItem;
         private System.Windows.Forms.Label informationDisplay;
         private System.Windows.Forms.Label timeDisplay;
-        private System.Windows.Forms.Label ipDisplay;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Label localIPDisplay;
+        private System.Windows.Forms.Label publicIPdisp;
+        private System.Windows.Forms.ToolStripMenuItem listRandomizerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem converterToolStripMenuItem;
     }
 }

@@ -39,7 +39,7 @@ namespace Multi_Tool_V2
         };
 
         private readonly String username = Settings.Default.userName;
-        private String errorCode = ("");
+        String errorCode = ("");
         private decimal lengthOfPassword = 16;
         private decimal numberOfPasswords = 1;
         private int passwordType;
@@ -111,7 +111,7 @@ namespace Multi_Tool_V2
                     writer.WriteLine();
                 }
                 outputLabel.ForeColor = Color.Aqua;
-                outputLabel.Text = ("Your passwords have been successfully written to " + saveFileDialog.FileName);
+                outputLabel.Text = ("Your passwords have been successfully written to: " + saveFileDialog.FileName);
                 writer.Close();
             }
             else
@@ -135,7 +135,7 @@ namespace Multi_Tool_V2
 
         private void createButton_Click(object sender, EventArgs e)
         {
-            passwordType = Multi_Tool_V2.Properties.Settings.Default.randomPasswordType;
+            passwordType = Settings.Default.randomPasswordType;
             getRandomCharacter();
             printToFile();
         }

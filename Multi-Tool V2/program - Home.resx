@@ -117,6 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="informationDisplay.Text" xml:space="preserve">
+    <value>Change Log
+- Added Single String Encrypter
+- Added List Randomizer
+- Added time and ip addresses to home page
+
+Other Information
+- If a button is disabled it means that the feature is not yet implemented or is a work in progress
+
+</value>
+  </data>
   <metadata name="menuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
