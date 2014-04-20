@@ -87,40 +87,23 @@ namespace Multi_Tool_V2
             }
         }
 
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            time = DateTime.Now.ToString("hh:mm:ss tt", DateTimeFormatInfo.InvariantInfo);
+            timeDisplay.Text = ("Time: " + time);
+        }
+
         private void resetSettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Settings.Default.Reset();
-            MessageBox.Show("Settings have been reset", "Successful",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show("Settings have been reset", "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void randomPasswordGeneratorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var rp = new randomPassword_Home();
-            rp.Show();
-        }
 
         private void infoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var pi = new programInfo();
+            var pi = new ProgramInfo();
             pi.Show();
-        }
-
-        private void minecraftUserMakerToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var mum = new minecraftUserMaker_Home();
-            mum.Show();
-        }
-
-        private void rollTheDiceToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var rtd = new rtd();
-            rtd.Show();
-        }
-
-        private void encrypterToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            var sse = new singleStringEncrypter();
-            sse.Show();
         }
 
         private void preferencesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -129,28 +112,41 @@ namespace Multi_Tool_V2
             pp.Show();
         }
 
-        private void decrypterToolStripMenuItem_Click(object sender, EventArgs e)
+        //Tools
+        private void randomPasswordGeneratorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var ssd = new singleStringDecrypter();
-            ssd.Show();
+            var rp = new RandomPassword_Home();
+            rp.Show();
         }
 
-        private void timer_Tick(object sender, EventArgs e)
+        private void minecraftUserMakerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            time = DateTime.Now.ToString("hh:mm:ss tt", DateTimeFormatInfo.InvariantInfo);
-            timeDisplay.Text = ("Time: " + time);
+            var mum = new MinecraftUserMaker_Home();
+            mum.Show();
+        }
+
+        private void rollTheDiceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var rtd = new RollTheDice();
+            rtd.Show();
         }
 
         private void listRandomizerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var lr = new listRandomizer();
+            var lr = new ListRandomizer();
             lr.Show();
         }
 
         private void converterToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var cvert = new converter();
+            var cvert = new Converter();
             cvert.Show();
+        }
+
+        private void rockPaperScissorsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var rps = new RockPaperScissors();
+            rps.Show();
         }
     }
 }

@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProgramPreferences));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.changeDefaultTextButton = new System.Windows.Forms.Button();
             this.defaultTextPanelColour = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.changeDefaultTextButton = new System.Windows.Forms.Button();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +65,14 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1052, 720);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // defaultTextPanelColour
+            // 
+            this.defaultTextPanelColour.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.defaultTextPanelColour.Location = new System.Drawing.Point(781, 62);
+            this.defaultTextPanelColour.Name = "defaultTextPanelColour";
+            this.defaultTextPanelColour.Size = new System.Drawing.Size(268, 53);
+            this.defaultTextPanelColour.TabIndex = 1;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -86,14 +94,6 @@
             this.changeDefaultTextButton.UseVisualStyleBackColor = true;
             this.changeDefaultTextButton.Click += new System.EventHandler(this.changeDefaultTextButton_Click);
             // 
-            // defaultTextPanelColour
-            // 
-            this.defaultTextPanelColour.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.defaultTextPanelColour.Location = new System.Drawing.Point(781, 62);
-            this.defaultTextPanelColour.Name = "defaultTextPanelColour";
-            this.defaultTextPanelColour.Size = new System.Drawing.Size(268, 53);
-            this.defaultTextPanelColour.TabIndex = 1;
-            // 
             // ProgramPreferences
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -103,6 +103,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ProgramPreferences";
             this.Text = "Program Preferences";
+            this.Load += new System.EventHandler(this.ProgramPreferences_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);

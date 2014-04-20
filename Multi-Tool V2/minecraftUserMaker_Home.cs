@@ -6,12 +6,12 @@ using Multi_Tool_V2.Properties;
 namespace Multi_Tool_V2
 {
     //@author xNovax
-    public partial class minecraftUserMaker_Home : Form
+    public partial class MinecraftUserMaker_Home : Form
     {
         //Start of Global Variable Declaration
 
-        private static int RANDOMPASSWORDLENGTH = 16;
-        private readonly Random gen = new Random();
+        private const int RANDOMPASSWORDLENGTH = 16;
+        private readonly Random _gen = new Random();
         private readonly string[] randomPassword = new string[RANDOMPASSWORDLENGTH];
 
         private String IP = ("216.221.72.36");
@@ -29,7 +29,7 @@ namespace Multi_Tool_V2
 
         //End of Global Variable Declaration
 
-        public minecraftUserMaker_Home()
+        public MinecraftUserMaker_Home()
         {
             InitializeComponent();
         }
@@ -110,7 +110,7 @@ namespace Multi_Tool_V2
 
             for (int i = 0; i < RANDOMPASSWORDLENGTH; i++)
             {
-                int randomNum = gen.Next(62);
+                int randomNum = _gen.Next(62);
                 randomPassword[i] = allowedStrings[randomNum];
             }
         }

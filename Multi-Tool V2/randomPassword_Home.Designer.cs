@@ -1,6 +1,6 @@
 ﻿namespace Multi_Tool_V2
 {
-    partial class randomPassword_Home
+    partial class RandomPassword_Home
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(randomPassword_Home));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RandomPassword_Home));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -252,7 +252,7 @@
             // 
             this.saveFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
             // 
-            // randomPassword_Home
+            // RandomPassword_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -262,7 +262,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
             this.Margin = new System.Windows.Forms.Padding(6);
-            this.Name = "randomPassword_Home";
+            this.Name = "RandomPassword_Home";
             this.Text = "Random Password Generator";
             this.Load += new System.EventHandler(this.randomPassword_Home_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

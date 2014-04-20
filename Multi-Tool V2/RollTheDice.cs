@@ -3,10 +3,10 @@ using System.Windows.Forms;
 
 namespace Multi_Tool_V2
 {
-    public partial class rtd : Form
+    public partial class RollTheDice : Form
     {
         //@author xNovax
-        public rtd()
+        public RollTheDice()
         {
             InitializeComponent();
         }

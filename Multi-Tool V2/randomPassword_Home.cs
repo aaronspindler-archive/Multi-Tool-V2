@@ -6,7 +6,7 @@ using Multi_Tool_V2.Properties;
 
 namespace Multi_Tool_V2
 {
-    public partial class randomPassword_Home : Form
+    public partial class RandomPassword_Home : Form
     {
         //@author xNovax
         //Start of Global Variable Declaration
@@ -47,7 +47,7 @@ namespace Multi_Tool_V2
 
         //End of Gloabl Variable Declaration
 
-        public randomPassword_Home()
+        public RandomPassword_Home()
         {
             InitializeComponent();
         }
@@ -152,7 +152,7 @@ namespace Multi_Tool_V2
 
         private void optionsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var rpo = new randomPassword_Options();
+            var rpo = new RandomPassword_Options();
             rpo.Show();
         }
 

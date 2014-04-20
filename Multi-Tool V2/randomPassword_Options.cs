@@ -5,14 +5,14 @@ using Multi_Tool_V2.Properties;
 namespace Multi_Tool_V2
 {
     //@author xNovax
-    public partial class randomPassword_Options : Form
+    public partial class RandomPassword_Options : Form
     {
         //Start of Global Variable Declaration
         private Boolean normalPasswordSelected;
         private Boolean numberPasswordSelected;
         private Boolean specialCharPasswordSelected;
         //End of Global Variable Declaration
-        public randomPassword_Options()
+        public RandomPassword_Options()
         {
             InitializeComponent();
         }

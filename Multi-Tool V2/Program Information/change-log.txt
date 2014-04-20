@@ -13,10 +13,11 @@
  - Added dice roller AKA RTD
  ============================================================================================================
  [Version 1.0.0.4]
- - Added a single string encrypter
- - Added a single string decrypter
- - Added program preferences
+ - Added program preferences (Not yet finished)
  - Added new information to the home page - Such as time and ip addresses
  - Added list randomizer
  - Added converter
+ - Re-worked the menu system
+ - Added a games tab
+ - Added Rock Paper Scissors as the first game
  ============================================================================================================

@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Multi_Tool_V2
 {
-    partial class programInfo : Form
+    partial class ProgramInfo : Form
     {
-        public programInfo()
+        public ProgramInfo()
         {
             InitializeComponent();
             this.Text = String.Format("About {0}", AssemblyTitle);

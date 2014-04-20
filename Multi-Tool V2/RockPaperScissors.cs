@@ -10,20 +10,14 @@ using System.Windows.Forms;
 
 namespace Multi_Tool_V2
 {
-    public partial class ProgramPreferences : Form
+    public partial class RockPaperScissors : Form
     {
-        //@author xNovax
-        public ProgramPreferences()
+        public RockPaperScissors()
         {
             InitializeComponent();
         }
 
-        private void ProgramPreferences_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void changeDefaultTextButton_Click(object sender, EventArgs e)
+        private void RockPaperScissors_Load(object sender, EventArgs e)
         {
 
         }

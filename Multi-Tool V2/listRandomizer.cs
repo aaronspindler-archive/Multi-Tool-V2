@@ -3,10 +3,10 @@ using System.Windows.Forms;
 
 namespace Multi_Tool_V2
 {
-    public partial class listRandomizer : Form
+    public partial class ListRandomizer : Form
     {
         //@author xNovax
-        public listRandomizer()
+        public ListRandomizer()
         {
             InitializeComponent();
         }
