@@ -42,7 +42,21 @@ namespace Multi_Tool_V2
 
         private void conversionType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            switch(conversionType.SelectedIndex)
+            {
+                case 0:
+                    break;
+                case 1:
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+            }
         }
     }
 }

@@ -13,13 +13,12 @@ namespace Multi_Tool_V2
         private Boolean _firstLoad = Settings.Default.firstLoad;
         private string _password = ("");
         private string _username = ("");
+        //End of Global Variable Declaration
 
         public LoginForm()
         {
             InitializeComponent();
         }
-
-        //End of Global Variable Declaration
 
         //Start of author created methods
 
@@ -125,8 +124,8 @@ namespace Multi_Tool_V2
 
         private void createUserButton_Click(object sender, EventArgs e)
         {
-            ErrorCode = ("Feature not yet implemented");
-            ErrorOccured();
+            var createUser = new CreateUser();
+            createUser.Show();
         }
     }
 }

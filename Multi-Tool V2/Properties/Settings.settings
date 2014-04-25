@@ -20,5 +20,14 @@
     <Setting Name="randomPasswordType" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
+    <Setting Name="usernameStorage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[xNovax]</Value>
+    </Setting>
+    <Setting Name="passwordStorage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">[Password]</Value>
+    </Setting>
+    <Setting Name="numberOfUsers" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

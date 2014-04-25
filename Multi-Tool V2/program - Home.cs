@@ -30,12 +30,14 @@ namespace Multi_Tool_V2
         //Making sure the entire program is getting closed when you exit the main form
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Multi_Tool_V2.Properties.Settings.Default.Save();
             Application.Exit();
         }
 
         //Doing the same thing as above but for a different event
         private void programHome_FormClosing(object sender, FormClosingEventArgs e)
         {
+            Multi_Tool_V2.Properties.Settings.Default.Save();
             Application.Exit();
         }
 
@@ -59,7 +61,7 @@ namespace Multi_Tool_V2
                 // Getting Ip address of local machine...
                 // First get the host name of local machine.
                 strHostName = Dns.GetHostName();
-                // Then using host name, get the IP address list..
+                // Then using host name, get the IP address list.
                 IPHostEntry ipEntry = Dns.GetHostEntry(strHostName);
                 IPAddress[] addr = ipEntry.AddressList;
 

@@ -62,7 +62,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(467, 214);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(457, 157);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // rolledNumberLabel
@@ -71,11 +71,11 @@
             this.tableLayoutPanel1.SetColumnSpan(this.rolledNumberLabel, 2);
             this.rolledNumberLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rolledNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rolledNumberLabel.Location = new System.Drawing.Point(176, 119);
+            this.rolledNumberLabel.Location = new System.Drawing.Point(173, 91);
             this.rolledNumberLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.rolledNumberLabel.Name = "rolledNumberLabel";
             this.tableLayoutPanel1.SetRowSpan(this.rolledNumberLabel, 2);
-            this.rolledNumberLabel.Size = new System.Drawing.Size(112, 95);
+            this.rolledNumberLabel.Size = new System.Drawing.Size(110, 66);
             this.rolledNumberLabel.TabIndex = 1;
             this.rolledNumberLabel.Text = "1";
             this.rolledNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -84,8 +84,8 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.numberOfSidesOnDice, 4);
             this.numberOfSidesOnDice.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numberOfSidesOnDice.Location = new System.Drawing.Point(118, 49);
-            this.numberOfSidesOnDice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numberOfSidesOnDice.Location = new System.Drawing.Point(116, 35);
+            this.numberOfSidesOnDice.Margin = new System.Windows.Forms.Padding(2);
             this.numberOfSidesOnDice.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -97,7 +97,7 @@
             0,
             0});
             this.numberOfSidesOnDice.Name = "numberOfSidesOnDice";
-            this.numberOfSidesOnDice.Size = new System.Drawing.Size(228, 20);
+            this.numberOfSidesOnDice.Size = new System.Drawing.Size(224, 20);
             this.numberOfSidesOnDice.TabIndex = 1;
             this.numberOfSidesOnDice.Value = new decimal(new int[] {
             1,
@@ -115,7 +115,7 @@
             this.numberOfSidesOnDiceLabel.Location = new System.Drawing.Point(2, 0);
             this.numberOfSidesOnDiceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.numberOfSidesOnDiceLabel.Name = "numberOfSidesOnDiceLabel";
-            this.numberOfSidesOnDiceLabel.Size = new System.Drawing.Size(463, 47);
+            this.numberOfSidesOnDiceLabel.Size = new System.Drawing.Size(453, 33);
             this.numberOfSidesOnDiceLabel.TabIndex = 2;
             this.numberOfSidesOnDiceLabel.Text = "Enter how many sides you want on the dice";
             this.numberOfSidesOnDiceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -124,10 +124,10 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.getRandomSide, 4);
             this.getRandomSide.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.getRandomSide.Location = new System.Drawing.Point(118, 74);
-            this.getRandomSide.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.getRandomSide.Location = new System.Drawing.Point(116, 60);
+            this.getRandomSide.Margin = new System.Windows.Forms.Padding(2);
             this.getRandomSide.Name = "getRandomSide";
-            this.getRandomSide.Size = new System.Drawing.Size(228, 43);
+            this.getRandomSide.Size = new System.Drawing.Size(224, 29);
             this.getRandomSide.TabIndex = 3;
             this.getRandomSide.Text = "Roll The Dice";
             this.getRandomSide.UseVisualStyleBackColor = true;
@@ -137,7 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(467, 214);
+            this.ClientSize = new System.Drawing.Size(457, 157);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

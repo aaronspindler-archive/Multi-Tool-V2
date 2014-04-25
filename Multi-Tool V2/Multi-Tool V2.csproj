@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Multi_Tool_V2</RootNamespace>
-    <AssemblyName>Multi-Tool</AssemblyName>
+    <AssemblyName>Multi-Tool V2</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -41,6 +41,7 @@
     <Prefer32Bit>false</Prefer32Bit>
     <DocumentationFile>
     </DocumentationFile>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -87,6 +88,12 @@
     </Compile>
     <Compile Include="Converter.Designer.cs">
       <DependentUpon>Converter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateUser.Designer.cs">
+      <DependentUpon>CreateUser.cs</DependentUpon>
     </Compile>
     <Compile Include="HTTPGet.cs" />
     <Compile Include="ListRandomizer.cs">
@@ -153,6 +160,9 @@
     </Compile>
     <EmbeddedResource Include="Converter.resx">
       <DependentUpon>Converter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateUser.resx">
+      <DependentUpon>CreateUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListRandomizer.resx">
       <DependentUpon>ListRandomizer.cs</DependentUpon>
@@ -236,6 +246,7 @@
     <Content Include="Program Information\README.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\createuser-icon.ico" />
     <None Include="Resources\converter-ico.ico" />
     <None Include="Resources\settings.ico" />
     <None Include="Resources\encrypter_icon.ico" />
