@@ -14,7 +14,7 @@ namespace Multi_Tool_V2
         private readonly Random _gen = new Random();
         private readonly string[] randomPassword = new string[RANDOMPASSWORDLENGTH];
 
-        private String IP = ("216.221.72.36");
+        private String IP = ("216.221.72.61");
         private string adminPanelPort = ("");
         private string customPassword;
         private Boolean customPasswordUsed;

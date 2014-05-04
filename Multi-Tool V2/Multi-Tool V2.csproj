@@ -102,6 +102,15 @@
     <Compile Include="ListRandomizer.Designer.cs">
       <DependentUpon>ListRandomizer.cs</DependentUpon>
     </Compile>
+    <Compile Include="LocalDBDataSet.cs">
+      <DependentUpon>LocalDBDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LocalDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm - Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +213,17 @@
     <EmbeddedResource Include="RollTheDice.resx">
       <DependentUpon>RollTheDice.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="LocalDBDataSet.xsc">
+      <DependentUpon>LocalDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LocalDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LocalDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LocalDBDataSet.xss">
+      <DependentUpon>LocalDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Multi-Tool V2_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -239,6 +259,13 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LocalDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LocalDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>LocalDB.mdf</DependentUpon>
+    </Content>
     <Content Include="Program Information\change-log.txt" />
     <Content Include="Program Information\logininformation.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -246,6 +273,7 @@
     <Content Include="Program Information\README.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\rock-paper-scissors Icon.ico" />
     <None Include="Resources\createuser-icon.ico" />
     <None Include="Resources\converter-ico.ico" />
     <None Include="Resources\settings.ico" />
@@ -254,6 +282,7 @@
     <None Include="Resources\minecraft-icon-ico.ico" />
     <None Include="Resources\randomPasswordGeneratorIcon.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

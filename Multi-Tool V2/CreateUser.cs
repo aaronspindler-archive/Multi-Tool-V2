@@ -22,9 +22,6 @@ namespace Multi_Tool_V2
         Boolean isThereTextInField = false;
         string username = ("");
         string password = ("");
-        string usernameStorage = Multi_Tool_V2.Properties.Settings.Default.usernameStorage;
-        string passwordStorage = Multi_Tool_V2.Properties.Settings.Default.passwordStorage;
-        int numberOfUsers = Multi_Tool_V2.Properties.Settings.Default.numberOfUsers;
 
         public void checkForText()
         {
@@ -78,13 +75,7 @@ namespace Multi_Tool_V2
 
         private void createUserButton_Click(object sender, EventArgs e)
         {
-            numberOfUsers = numberOfUsers + 1;
-            string[] usernameArray = new String[numberOfUsers];
-            string[] passwordArray = new String[numberOfUsers];
 
-            //Save the data to a the settings
-            Multi_Tool_V2.Properties.Settings.Default.numberOfUsers = numberOfUsers;
-            Multi_Tool_V2.Properties.Settings.Default.Save();
         }
     }
 }

@@ -136,6 +136,9 @@
   <data name="randomPasswordGeneratorIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\randomPasswordGeneratorIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="rock_paper_scissors_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rock-paper-scissors Icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="settings" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\settings.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

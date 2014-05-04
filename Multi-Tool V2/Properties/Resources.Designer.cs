@@ -123,6 +123,16 @@ namespace Multi_Tool_V2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
+        internal static System.Drawing.Icon rock_paper_scissors_Icon {
+            get {
+                object obj = ResourceManager.GetObject("rock_paper_scissors_Icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
         internal static System.Drawing.Icon settings {
             get {
                 object obj = ResourceManager.GetObject("settings", resourceCulture);
