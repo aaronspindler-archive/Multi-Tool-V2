@@ -259,6 +259,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\Multi-Tool V2.exe" />
     <Content Include="LocalDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
